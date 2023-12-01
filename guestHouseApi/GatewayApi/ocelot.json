@@ -1,0 +1,167 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/User/authenticate",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5051"
+        }
+      ],
+      "UpstreamPathTemplate": "/auth-api/auth"
+    },
+    {
+      "DownstreamPathTemplate": "/User/LoginAuthenticate",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5051"
+        }
+      ],
+      "UpstreamPathTemplate": "/auth-api/mobile-auth"
+    },
+
+    {
+      "DownstreamPathTemplate": "/User/forgetPassword",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5051"
+        }
+      ],
+      "UpstreamPathTemplate": "/user-api/forgetPassword"
+    },
+    {
+      "DownstreamPathTemplate": "/User/getOTP",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5051"
+        }
+      ],
+      "UpstreamPathTemplate": "/auth-api/saveOTP"
+    },
+    {
+      "DownstreamPathTemplate": "/User/getVerifyOTP",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5051"
+        }
+      ],
+      "UpstreamPathTemplate": "/auth-api/getOTP"
+    },
+    {
+      "DownstreamPathTemplate": "/User/saveMobileUser",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5051"
+        }
+      ],
+      "UpstreamPathTemplate": "/auth-api/saveUser"
+    },
+    {
+      "DownstreamPathTemplate": "/User/getCompanyLogo",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5051"
+        }
+      ],
+      "UpstreamPathTemplate": "/auth-api/logo"
+    },
+    {
+      "DownstreamPathTemplate": "/User/genToken",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5051"
+        }
+      ],
+      "UpstreamPathTemplate": "/auth-api/generateToken"
+    },
+    {
+      "DownstreamPathTemplate": "/{catchAll}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5051"
+        }
+      ],
+      "UpstreamPathTemplate": "/user-api/{catchAll}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "MyOwnKey",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/{catchAll}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5053"
+        }
+      ],
+      "UpstreamPathTemplate": "/cmis-api/{catchAll}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "MyOwnKey",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/{catchAll}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "8045"
+        }
+      ],
+      "UpstreamPathTemplate": "/addmission-api/{catchAll}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "MyOwnKey",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/{catchAll}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5052"
+        }
+      ],
+      "UpstreamPathTemplate": "/school-api/{catchAll}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "MyOwnKey",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/{catchAll}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "8045"
+        }
+      ],
+      "UpstreamPathTemplate": "/admission-api/{catchAll}"
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:5050/"
+  }
+}

@@ -1,0 +1,396 @@
+E:\projects\aims-pos-api\umismoduleapi\bin\Debug\net5.0\appsettings.Development.json
+E:\projects\aims-pos-api\umismoduleapi\bin\Debug\net5.0\appsettings.json
+E:\projects\aims-pos-api\umismoduleapi\bin\Debug\net5.0\UMISModuleApi.exe
+E:\projects\aims-pos-api\umismoduleapi\bin\Debug\net5.0\UMISModuleApi.deps.json
+E:\projects\aims-pos-api\umismoduleapi\bin\Debug\net5.0\UMISModuleApi.runtimeconfig.json
+E:\projects\aims-pos-api\umismoduleapi\bin\Debug\net5.0\UMISModuleApi.runtimeconfig.dev.json
+E:\projects\aims-pos-api\umismoduleapi\bin\Debug\net5.0\UMISModuleApi.dll
+E:\projects\aims-pos-api\umismoduleapi\bin\Debug\net5.0\ref\UMISModuleApi.dll
+E:\projects\aims-pos-api\umismoduleapi\bin\Debug\net5.0\UMISModuleApi.pdb
+E:\projects\aims-pos-api\umismoduleapi\bin\Debug\net5.0\Dapper.dll
+E:\projects\aims-pos-api\umismoduleapi\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+E:\projects\aims-pos-api\umismoduleapi\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\projects\aims-pos-api\umismoduleapi\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+E:\projects\aims-pos-api\umismoduleapi\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+E:\projects\aims-pos-api\umismoduleapi\bin\Debug\net5.0\Microsoft.OpenApi.dll
+E:\projects\aims-pos-api\umismoduleapi\bin\Debug\net5.0\Npgsql.dll
+E:\projects\aims-pos-api\umismoduleapi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\projects\aims-pos-api\umismoduleapi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\projects\aims-pos-api\umismoduleapi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\projects\aims-pos-api\umismoduleapi\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+E:\projects\aims-pos-api\umismoduleapi\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+E:\projects\aims-pos-api\umismoduleapi\obj\Debug\net5.0\UMISModuleApi.csprojAssemblyReference.cache
+E:\projects\aims-pos-api\umismoduleapi\obj\Debug\net5.0\UMISModuleApi.GeneratedMSBuildEditorConfig.editorconfig
+E:\projects\aims-pos-api\umismoduleapi\obj\Debug\net5.0\UMISModuleApi.AssemblyInfoInputs.cache
+E:\projects\aims-pos-api\umismoduleapi\obj\Debug\net5.0\UMISModuleApi.AssemblyInfo.cs
+E:\projects\aims-pos-api\umismoduleapi\obj\Debug\net5.0\UMISModuleApi.csproj.CoreCompileInputs.cache
+E:\projects\aims-pos-api\umismoduleapi\obj\Debug\net5.0\UMISModuleApi.MvcApplicationPartsAssemblyInfo.cs
+E:\projects\aims-pos-api\umismoduleapi\obj\Debug\net5.0\UMISModuleApi.MvcApplicationPartsAssemblyInfo.cache
+E:\projects\aims-pos-api\umismoduleapi\obj\Debug\net5.0\staticwebassets\UMISModuleApi.StaticWebAssets.Manifest.cache
+E:\projects\aims-pos-api\umismoduleapi\obj\Debug\net5.0\staticwebassets\UMISModuleApi.StaticWebAssets.xml
+E:\projects\aims-pos-api\umismoduleapi\obj\Debug\net5.0\scopedcss\bundle\UMISModuleApi.styles.css
+E:\projects\aims-pos-api\umismoduleapi\obj\Debug\net5.0\UMISModuleApi.RazorTargetAssemblyInfo.cache
+E:\projects\aims-pos-api\umismoduleapi\obj\Debug\net5.0\UMISModuleApi.csproj.CopyComplete
+E:\projects\aims-pos-api\umismoduleapi\obj\Debug\net5.0\UMISModuleApi.dll
+E:\projects\aims-pos-api\umismoduleapi\obj\Debug\net5.0\ref\UMISModuleApi.dll
+E:\projects\aims-pos-api\umismoduleapi\obj\Debug\net5.0\UMISModuleApi.pdb
+E:\projects\aims-pos-api\umismoduleapi\obj\Debug\net5.0\UMISModuleApi.genruntimeconfig.cache
+E:\schoolApi\schoolApi\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.GeneratedMSBuildEditorConfig.editorconfig
+E:\schoolApi\schoolApi\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.AssemblyInfoInputs.cache
+E:\schoolApi\schoolApi\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.AssemblyInfo.cs
+E:\schoolApi\schoolApi\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.csproj.CoreCompileInputs.cache
+E:\schoolApi\schoolApi\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.MvcApplicationPartsAssemblyInfo.cs
+E:\schoolApi\schoolApi\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.MvcApplicationPartsAssemblyInfo.cache
+E:\schoolApi\schoolApi\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.dll
+E:\schoolApi\schoolApi\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.pdb
+E:\schoolApi\schoolApi\UMISModuleApi\bin\Debug\net5.0\appsettings.Development.json
+E:\schoolApi\schoolApi\UMISModuleApi\bin\Debug\net5.0\appsettings.json
+E:\schoolApi\schoolApi\UMISModuleApi\bin\Debug\net5.0\UMISModuleApi.exe
+E:\schoolApi\schoolApi\UMISModuleApi\bin\Debug\net5.0\UMISModuleApi.deps.json
+E:\schoolApi\schoolApi\UMISModuleApi\bin\Debug\net5.0\UMISModuleApi.runtimeconfig.json
+E:\schoolApi\schoolApi\UMISModuleApi\bin\Debug\net5.0\UMISModuleApi.runtimeconfig.dev.json
+E:\schoolApi\schoolApi\UMISModuleApi\bin\Debug\net5.0\UMISModuleApi.dll
+E:\schoolApi\schoolApi\UMISModuleApi\bin\Debug\net5.0\UMISModuleApi.pdb
+E:\schoolApi\schoolApi\UMISModuleApi\bin\Debug\net5.0\Dapper.dll
+E:\schoolApi\schoolApi\UMISModuleApi\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+E:\schoolApi\schoolApi\UMISModuleApi\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\schoolApi\schoolApi\UMISModuleApi\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+E:\schoolApi\schoolApi\UMISModuleApi\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+E:\schoolApi\schoolApi\UMISModuleApi\bin\Debug\net5.0\Microsoft.OpenApi.dll
+E:\schoolApi\schoolApi\UMISModuleApi\bin\Debug\net5.0\Npgsql.dll
+E:\schoolApi\schoolApi\UMISModuleApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\schoolApi\schoolApi\UMISModuleApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\schoolApi\schoolApi\UMISModuleApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\schoolApi\schoolApi\UMISModuleApi\bin\Debug\net5.0\System.Data.SqlClient.dll
+E:\schoolApi\schoolApi\UMISModuleApi\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+E:\schoolApi\schoolApi\UMISModuleApi\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+E:\schoolApi\schoolApi\UMISModuleApi\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+E:\schoolApi\schoolApi\UMISModuleApi\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+E:\schoolApi\schoolApi\UMISModuleApi\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+E:\schoolApi\schoolApi\UMISModuleApi\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\schoolApi\schoolApi\UMISModuleApi\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\schoolApi\schoolApi\UMISModuleApi\obj\Debug\net5.0\scopedcss\bundle\UMISModuleApi.styles.css
+E:\schoolApi\schoolApi\UMISModuleApi\obj\Debug\net5.0\staticwebassets\UMISModuleApi.StaticWebAssets.Manifest.cache
+E:\schoolApi\schoolApi\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.RazorTargetAssemblyInfo.cache
+E:\schoolApi\schoolApi\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.csproj.CopyComplete
+E:\schoolApi\schoolApi\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.genruntimeconfig.cache
+E:\schoolApi\schoolApi\UMISModuleApi\obj\Debug\net5.0\ref\UMISModuleApi.dll
+E:\schoolApi\schoolApi\UMISModuleApi\bin\Debug\net5.0\ref\UMISModuleApi.dll
+E:\schoolApi\schoolApi\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.csprojAssemblyReference.cache
+E:\schoolApi\schoolApi\UMISModuleApi\obj\Debug\net5.0\staticwebassets\UMISModuleApi.StaticWebAssets.xml
+E:\schoolApi\school-API\UMISModuleApi\bin\Debug\net5.0\appsettings.Development.json
+E:\schoolApi\school-API\UMISModuleApi\bin\Debug\net5.0\appsettings.json
+E:\schoolApi\school-API\UMISModuleApi\bin\Debug\net5.0\UMISModuleApi.exe
+E:\schoolApi\school-API\UMISModuleApi\bin\Debug\net5.0\UMISModuleApi.deps.json
+E:\schoolApi\school-API\UMISModuleApi\bin\Debug\net5.0\UMISModuleApi.runtimeconfig.json
+E:\schoolApi\school-API\UMISModuleApi\bin\Debug\net5.0\UMISModuleApi.runtimeconfig.dev.json
+E:\schoolApi\school-API\UMISModuleApi\bin\Debug\net5.0\UMISModuleApi.dll
+E:\schoolApi\school-API\UMISModuleApi\bin\Debug\net5.0\UMISModuleApi.pdb
+E:\schoolApi\school-API\UMISModuleApi\bin\Debug\net5.0\Dapper.dll
+E:\schoolApi\school-API\UMISModuleApi\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+E:\schoolApi\school-API\UMISModuleApi\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\schoolApi\school-API\UMISModuleApi\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+E:\schoolApi\school-API\UMISModuleApi\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+E:\schoolApi\school-API\UMISModuleApi\bin\Debug\net5.0\Microsoft.OpenApi.dll
+E:\schoolApi\school-API\UMISModuleApi\bin\Debug\net5.0\Npgsql.dll
+E:\schoolApi\school-API\UMISModuleApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\schoolApi\school-API\UMISModuleApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\schoolApi\school-API\UMISModuleApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\schoolApi\school-API\UMISModuleApi\bin\Debug\net5.0\System.Data.SqlClient.dll
+E:\schoolApi\school-API\UMISModuleApi\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+E:\schoolApi\school-API\UMISModuleApi\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+E:\schoolApi\school-API\UMISModuleApi\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+E:\schoolApi\school-API\UMISModuleApi\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+E:\schoolApi\school-API\UMISModuleApi\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+E:\schoolApi\school-API\UMISModuleApi\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\schoolApi\school-API\UMISModuleApi\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\schoolApi\school-API\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.GeneratedMSBuildEditorConfig.editorconfig
+E:\schoolApi\school-API\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.AssemblyInfoInputs.cache
+E:\schoolApi\school-API\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.AssemblyInfo.cs
+E:\schoolApi\school-API\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.csproj.CoreCompileInputs.cache
+E:\schoolApi\school-API\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.MvcApplicationPartsAssemblyInfo.cs
+E:\schoolApi\school-API\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.MvcApplicationPartsAssemblyInfo.cache
+E:\schoolApi\school-API\UMISModuleApi\obj\Debug\net5.0\staticwebassets\UMISModuleApi.StaticWebAssets.Manifest.cache
+E:\schoolApi\school-API\UMISModuleApi\obj\Debug\net5.0\scopedcss\bundle\UMISModuleApi.styles.css
+E:\schoolApi\school-API\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.RazorTargetAssemblyInfo.cache
+E:\schoolApi\school-API\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.csproj.CopyComplete
+E:\schoolApi\school-API\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.dll
+E:\schoolApi\school-API\UMISModuleApi\obj\Debug\net5.0\ref\UMISModuleApi.dll
+E:\schoolApi\school-API\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.pdb
+E:\schoolApi\school-API\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.genruntimeconfig.cache
+E:\schoolApi\school-Api\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.csproj.AssemblyReference.cache
+E:\schoolApi\school-Api\UMISModuleApi\obj\Debug\net5.0\refint\UMISModuleApi.dll
+E:\schoolApi\School-Api\UMISModuleApi\bin\Debug\net5.0\MailKit.dll
+E:\schoolApi\School-Api\UMISModuleApi\bin\Debug\net5.0\MimeKit.dll
+E:\schoolApi\School-Api\UMISModuleApi\bin\Debug\net5.0\BouncyCastle.Crypto.dll
+D:\Angular\School-api\School-API\UMISModuleApi\bin\Debug\net5.0\appsettings.Development.json
+D:\Angular\School-api\School-API\UMISModuleApi\bin\Debug\net5.0\appsettings.json
+D:\Angular\School-api\School-API\UMISModuleApi\bin\Debug\net5.0\UMISModuleApi.exe
+D:\Angular\School-api\School-API\UMISModuleApi\bin\Debug\net5.0\UMISModuleApi.deps.json
+D:\Angular\School-api\School-API\UMISModuleApi\bin\Debug\net5.0\UMISModuleApi.runtimeconfig.json
+D:\Angular\School-api\School-API\UMISModuleApi\bin\Debug\net5.0\UMISModuleApi.runtimeconfig.dev.json
+D:\Angular\School-api\School-API\UMISModuleApi\bin\Debug\net5.0\UMISModuleApi.dll
+D:\Angular\School-api\School-API\UMISModuleApi\bin\Debug\net5.0\ref\UMISModuleApi.dll
+D:\Angular\School-api\School-API\UMISModuleApi\bin\Debug\net5.0\UMISModuleApi.pdb
+D:\Angular\School-api\School-API\UMISModuleApi\bin\Debug\net5.0\Dapper.dll
+D:\Angular\School-api\School-API\UMISModuleApi\bin\Debug\net5.0\MailKit.dll
+D:\Angular\School-api\School-API\UMISModuleApi\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Angular\School-api\School-API\UMISModuleApi\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Angular\School-api\School-API\UMISModuleApi\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+D:\Angular\School-api\School-API\UMISModuleApi\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+D:\Angular\School-api\School-API\UMISModuleApi\bin\Debug\net5.0\Microsoft.OpenApi.dll
+D:\Angular\School-api\School-API\UMISModuleApi\bin\Debug\net5.0\MimeKit.dll
+D:\Angular\School-api\School-API\UMISModuleApi\bin\Debug\net5.0\Npgsql.dll
+D:\Angular\School-api\School-API\UMISModuleApi\bin\Debug\net5.0\BouncyCastle.Crypto.dll
+D:\Angular\School-api\School-API\UMISModuleApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Angular\School-api\School-API\UMISModuleApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Angular\School-api\School-API\UMISModuleApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Angular\School-api\School-API\UMISModuleApi\bin\Debug\net5.0\System.Data.SqlClient.dll
+D:\Angular\School-api\School-API\UMISModuleApi\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Angular\School-api\School-API\UMISModuleApi\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+D:\Angular\School-api\School-API\UMISModuleApi\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+D:\Angular\School-api\School-API\UMISModuleApi\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+D:\Angular\School-api\School-API\UMISModuleApi\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+D:\Angular\School-api\School-API\UMISModuleApi\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Angular\School-api\School-API\UMISModuleApi\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Angular\School-api\School-API\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.csproj.AssemblyReference.cache
+D:\Angular\School-api\School-API\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.GeneratedMSBuildEditorConfig.editorconfig
+D:\Angular\School-api\School-API\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.AssemblyInfoInputs.cache
+D:\Angular\School-api\School-API\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.AssemblyInfo.cs
+D:\Angular\School-api\School-API\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.csproj.CoreCompileInputs.cache
+D:\Angular\School-api\School-API\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.MvcApplicationPartsAssemblyInfo.cs
+D:\Angular\School-api\School-API\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.MvcApplicationPartsAssemblyInfo.cache
+D:\Angular\School-api\School-API\UMISModuleApi\obj\Debug\net5.0\staticwebassets\UMISModuleApi.StaticWebAssets.Manifest.cache
+D:\Angular\School-api\School-API\UMISModuleApi\obj\Debug\net5.0\staticwebassets\UMISModuleApi.StaticWebAssets.xml
+D:\Angular\School-api\School-API\UMISModuleApi\obj\Debug\net5.0\scopedcss\bundle\UMISModuleApi.styles.css
+D:\Angular\School-api\School-API\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.RazorTargetAssemblyInfo.cache
+D:\Angular\School-api\School-API\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.csproj.CopyComplete
+D:\Angular\School-api\School-API\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.dll
+D:\Angular\School-api\School-API\UMISModuleApi\obj\Debug\net5.0\ref\UMISModuleApi.dll
+D:\Angular\School-api\School-API\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.pdb
+D:\Angular\School-api\School-API\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.genruntimeconfig.cache
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\appsettings.Development.json
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\appsettings.json
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\UMISModuleApi.exe
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\UMISModuleApi.deps.json
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\UMISModuleApi.runtimeconfig.json
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\UMISModuleApi.runtimeconfig.dev.json
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\UMISModuleApi.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\ref\UMISModuleApi.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\UMISModuleApi.pdb
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.BackgroundJobs.Abstractions.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.Core.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.Data.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.Emailing.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.Json.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.Localization.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.Localization.Abstractions.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.MailKit.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.MultiTenancy.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.ObjectExtending.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.Security.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.Settings.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.TextTemplating.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.Timing.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.Uow.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.Validation.Abstractions.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.VirtualFileSystem.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\Dapper.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\JetBrains.Annotations.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\MailKit.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\Microsoft.OpenApi.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\MimeKit.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\Newtonsoft.Json.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\Nito.AsyncEx.Context.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\Nito.AsyncEx.Coordination.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\Nito.AsyncEx.Tasks.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\Nito.Collections.Deque.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\Nito.Disposables.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\Npgsql.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\BouncyCastle.Crypto.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\Scriban.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\System.Data.SqlClient.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\System.Linq.Dynamic.Core.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\TimeZoneConverter.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\Zaabee.Extensions.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\Zaabee.SmtpClient.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.csproj.AssemblyReference.cache
+E:\School Api\schoolApi\School-API\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.GeneratedMSBuildEditorConfig.editorconfig
+E:\School Api\schoolApi\School-API\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.AssemblyInfoInputs.cache
+E:\School Api\schoolApi\School-API\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.AssemblyInfo.cs
+E:\School Api\schoolApi\School-API\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.csproj.CoreCompileInputs.cache
+E:\School Api\schoolApi\School-API\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.MvcApplicationPartsAssemblyInfo.cs
+E:\School Api\schoolApi\School-API\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.MvcApplicationPartsAssemblyInfo.cache
+E:\School Api\schoolApi\School-API\UMISModuleApi\obj\Debug\net5.0\staticwebassets\UMISModuleApi.StaticWebAssets.Manifest.cache
+E:\School Api\schoolApi\School-API\UMISModuleApi\obj\Debug\net5.0\staticwebassets\UMISModuleApi.StaticWebAssets.xml
+E:\School Api\schoolApi\School-API\UMISModuleApi\obj\Debug\net5.0\scopedcss\bundle\UMISModuleApi.styles.css
+E:\School Api\schoolApi\School-API\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.RazorTargetAssemblyInfo.cache
+E:\School Api\schoolApi\School-API\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.csproj.CopyComplete
+E:\School Api\schoolApi\School-API\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\obj\Debug\net5.0\ref\UMISModuleApi.dll
+E:\School Api\schoolApi\School-API\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.pdb
+E:\School Api\schoolApi\School-API\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.genruntimeconfig.cache
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\appsettings.Development.json
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\appsettings.json
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\UMISModuleApi.exe
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\UMISModuleApi.deps.json
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\UMISModuleApi.runtimeconfig.json
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\UMISModuleApi.runtimeconfig.dev.json
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\UMISModuleApi.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\ref\UMISModuleApi.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\UMISModuleApi.pdb
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.BackgroundJobs.Abstractions.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.Core.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.Data.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.Emailing.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.Json.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.Localization.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.Localization.Abstractions.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.MailKit.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.MultiTenancy.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.ObjectExtending.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.Security.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.Settings.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.TextTemplating.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.Timing.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.Uow.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.Validation.Abstractions.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.VirtualFileSystem.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\Dapper.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\JetBrains.Annotations.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\MailKit.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\Microsoft.OpenApi.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\MimeKit.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\Newtonsoft.Json.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\Nito.AsyncEx.Context.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\Nito.AsyncEx.Coordination.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\Nito.AsyncEx.Tasks.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\Nito.Collections.Deque.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\Nito.Disposables.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\Npgsql.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\BouncyCastle.Crypto.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\Scriban.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\System.Data.SqlClient.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\System.Linq.Dynamic.Core.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\TimeZoneConverter.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\Zaabee.Extensions.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\Zaabee.SmtpClient.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\Guest_House\UMISModuleApi\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\Guest_House\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.csproj.AssemblyReference.cache
+E:\Guest_House\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.GeneratedMSBuildEditorConfig.editorconfig
+E:\Guest_House\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.AssemblyInfoInputs.cache
+E:\Guest_House\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.AssemblyInfo.cs
+E:\Guest_House\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.csproj.CoreCompileInputs.cache
+E:\Guest_House\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.MvcApplicationPartsAssemblyInfo.cs
+E:\Guest_House\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.MvcApplicationPartsAssemblyInfo.cache
+E:\Guest_House\UMISModuleApi\obj\Debug\net5.0\staticwebassets\UMISModuleApi.StaticWebAssets.Manifest.cache
+E:\Guest_House\UMISModuleApi\obj\Debug\net5.0\staticwebassets\UMISModuleApi.StaticWebAssets.xml
+E:\Guest_House\UMISModuleApi\obj\Debug\net5.0\scopedcss\bundle\UMISModuleApi.styles.css
+E:\Guest_House\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.RazorTargetAssemblyInfo.cache
+E:\Guest_House\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.csproj.CopyComplete
+E:\Guest_House\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.dll
+E:\Guest_House\UMISModuleApi\obj\Debug\net5.0\ref\UMISModuleApi.dll
+E:\Guest_House\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.pdb
+E:\Guest_House\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.genruntimeconfig.cache
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\appsettings.Development.json
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\appsettings.json
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\UMISModuleApi.exe
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\UMISModuleApi.deps.json
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\UMISModuleApi.runtimeconfig.json
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\UMISModuleApi.runtimeconfig.dev.json
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\UMISModuleApi.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\ref\UMISModuleApi.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\UMISModuleApi.pdb
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.BackgroundJobs.Abstractions.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.Core.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.Data.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.Emailing.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.Json.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.Localization.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.Localization.Abstractions.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.MailKit.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.MultiTenancy.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.ObjectExtending.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.Security.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.Settings.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.TextTemplating.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.Timing.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.Uow.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.Validation.Abstractions.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\Beiyuan.WebSystem.VirtualFileSystem.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\Dapper.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\JetBrains.Annotations.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\MailKit.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\Microsoft.OpenApi.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\MimeKit.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\Nito.AsyncEx.Context.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\Nito.AsyncEx.Coordination.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\Nito.AsyncEx.Tasks.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\Nito.Collections.Deque.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\Nito.Disposables.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\Npgsql.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\BouncyCastle.Crypto.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\Scriban.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\System.Data.SqlClient.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\System.Linq.Dynamic.Core.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\TimeZoneConverter.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\Zaabee.Extensions.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\Zaabee.SmtpClient.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\guestHouseApi\UMISModuleApi\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\guestHouseApi\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.csproj.AssemblyReference.cache
+D:\guestHouseApi\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.GeneratedMSBuildEditorConfig.editorconfig
+D:\guestHouseApi\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.AssemblyInfoInputs.cache
+D:\guestHouseApi\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.AssemblyInfo.cs
+D:\guestHouseApi\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.csproj.CoreCompileInputs.cache
+D:\guestHouseApi\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.MvcApplicationPartsAssemblyInfo.cs
+D:\guestHouseApi\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.MvcApplicationPartsAssemblyInfo.cache
+D:\guestHouseApi\UMISModuleApi\obj\Debug\net5.0\staticwebassets\UMISModuleApi.StaticWebAssets.Manifest.cache
+D:\guestHouseApi\UMISModuleApi\obj\Debug\net5.0\staticwebassets\UMISModuleApi.StaticWebAssets.xml
+D:\guestHouseApi\UMISModuleApi\obj\Debug\net5.0\scopedcss\bundle\UMISModuleApi.styles.css
+D:\guestHouseApi\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.RazorTargetAssemblyInfo.cache
+D:\guestHouseApi\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.csproj.CopyComplete
+D:\guestHouseApi\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.dll
+D:\guestHouseApi\UMISModuleApi\obj\Debug\net5.0\ref\UMISModuleApi.dll
+D:\guestHouseApi\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.pdb
+D:\guestHouseApi\UMISModuleApi\obj\Debug\net5.0\UMISModuleApi.genruntimeconfig.cache
