@@ -91,7 +91,7 @@ namespace GuestHouseMSApi.Controllers
             try
             {
                 var response = dapperQuery.SPReturn("sp_roomBooking", model, _dbCon);
-             return Ok(response);
+                return Ok(response);
             }
             catch (Exception e)
             {
