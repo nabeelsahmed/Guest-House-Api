@@ -9,9 +9,9 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/UMISModuleApi/bin/Debug/net5.0/UMISModuleApi.dll",
+            "program": "${workspaceFolder}/guestHouseApi/GuestHouseMSApi/bin/Debug/net5.0/GuestHouseMSApi.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/UMISModuleApi",
+            "cwd": "${workspaceFolder}/guestHouseApi/GuestHouseMSApi",
             "stopAtEntry": false,
             "serverReadyAction": {
                 "action": "openExternally",
