@@ -8,6 +8,6 @@ namespace GuestHouseMSApi.Entities
     public class Floors
     {
         public int floorID { get; set; }
-        public int floorNo { get; set; }
+        public string floorNo { get; set; }
     }
 }
