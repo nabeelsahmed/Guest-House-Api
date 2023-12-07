@@ -84,6 +84,20 @@ namespace GuestHouseMSApi.Controllers
                 return Ok(e);
             }
         }
+
+        [HttpPost("saveRoomBooking")]
+        public IActionResult saveRoomBooking(RoomBookingCreation model)
+        {
+            try
+            {
+                var response = dapperQuery.SPReturn("sp_roomBooking", model, _dbCon);
+                return Ok(response);
+            }
+            catch (Exception e)
+            {
+                return Ok(e);
+            }
+        }
         
     }
 }
