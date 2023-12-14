@@ -63,6 +63,62 @@ namespace GuestHouseMSApi.Controllers
                 return Ok(e);
             }
         }
+        [HttpGet("getroomfeature")]
+        public IActionResult getroomfeature()
+        {
+            try
+            {
+                cmd = "select * from tbl_room_features";    
+                var appMenu = dapperQuery.Qry<roomfeatures>(cmd, _dbCon);
+                return Ok(appMenu);
+            }
+            catch (Exception e)
+            {
+                return Ok(e);
+            }
+        }
+        [HttpPost("SavefloorRoom")]
+        public IActionResult SavefloorRoom(savefloorRoom model)
+        {
+            try
+            {
+                var response = dapperQuery.SPReturn("dbo.sp_floorRoomCrud",model,_dbCon);
+
+                return Ok(response);
+            }
+            catch(Exception e)
+            {
+                return Ok(e);
+            }
+        }
+        [HttpPost("SaveRoomFeature")]
+        public IActionResult SaveRoomFeature(saveRoomFeature model)
+        {
+            try
+            {
+                var response = dapperQuery.SPReturn("dbo.sp_roomFeatureCrud",model,_dbCon);
+
+                return Ok(response);
+            }
+            catch(Exception e)
+            {
+                return Ok(e);
+            }
+        }
+        [HttpPost("SaveFloorRoomFeature")]
+        public IActionResult SaveFloorRoomFeature(savefloorRoomFeature model)
+        {
+            try
+            {
+                var response = dapperQuery.SPReturn("dbo.sp_floorRoomFeatureCrud",model,_dbCon);
+
+                return Ok(response);
+            }
+            catch(Exception e)
+            {
+                return Ok(e);
+            }
+        }
         
     }
 }
