@@ -5,15 +5,15 @@ using System.Threading.Tasks;
 
 namespace GuestHouseMSApi.Entities
 {
-    public class savefloorRoomFeature
+    public class FloorRoomCreation
     {
-        public int floorRoomFeatureID { get; set; }
-        public string floorRoomName { get; set; }
+        public int floorRoomID { get; set; }
         public int floorID { get; set; }
         public int branch_id { get; set; }
-        public int roomFeatureID { get; set; }
         public int userID { get; set; }
-        public string json { get; set; }
-        public string sptype  { get; set; }
+        public string floorRoomNo  { get; set; }
+        public string roomTypeID  { get; set; }
+      //  public string json  { get; set; }
+        public string spType { get; set; }
     }
 }

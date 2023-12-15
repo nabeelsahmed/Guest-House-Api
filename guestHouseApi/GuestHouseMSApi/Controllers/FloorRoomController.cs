@@ -27,6 +27,7 @@ namespace GuestHouseMSApi.Controllers
             _dbCon = dbCon;
         }
 
+
         [HttpGet("getRoomType")]
         public IActionResult getRoomType(int branchID)
         {
@@ -34,11 +35,11 @@ namespace GuestHouseMSApi.Controllers
             {
                 if (branchID == 0)
                 {
-                    cmd = "Select roomTypeID,roomtTypeTitle as roomTypeTitle from tbl_room_type Where isDeleted = 0 ";    
+                    cmd = "select roomTypeID,roomtTypeTitle as roomTypeTitle from tbl_room_type where isDeleted = 0";    
                 }
                 else
                 {
-                    cmd = "Select roomTypeID,roomtTypeTitle as roomTypeTitle from tbl_room_type Where isDeleted = 0 and branch_id = " + branchID + "";
+                    cmd = "select roomTypeID,roomtTypeTitle as roomTypeTitle from tbl_room_type where isDeleted = 0 and branch_id = " + branchID + "";
                 }
                 var appMenu = dapperQuery.Qry<RoomType>(cmd, _dbCon);
                 return Ok(appMenu);
@@ -63,13 +64,21 @@ namespace GuestHouseMSApi.Controllers
                 return Ok(e);
             }
         }
-        [HttpGet("getroomfeature")]
-        public IActionResult getroomfeature()
+
+        [HttpGet("getFloorRooms")]
+        public IActionResult getFloorRooms(int branchID, int floorID)
         {
             try
             {
-                cmd = "select * from tbl_room_features";    
-                var appMenu = dapperQuery.Qry<roomfeatures>(cmd, _dbCon);
+                if (branchID == 0 && floorID == 0)
+                {
+                    cmd = "select floorRoomID,floorRoomNo from tbl_floor_room where isDeleted = 0";    
+                }
+                else
+                {
+                    cmd = "select floorRoomID,floorRoomNo from tbl_floor_room where isDeleted = 0 and branch_id = " + branchID + " and floorID = " + floorID + "";
+                }
+                var appMenu = dapperQuery.Qry<FloorRooms>(cmd, _dbCon);
                 return Ok(appMenu);
             }
             catch (Exception e)
@@ -77,8 +86,9 @@ namespace GuestHouseMSApi.Controllers
                 return Ok(e);
             }
         }
-        [HttpPost("SavefloorRoom")]
-        public IActionResult SavefloorRoom(savefloorRoom model)
+        
+        [HttpPost("saveFloorRoom")]
+        public IActionResult saveFloorRoom(FloorRoomCreation model)
         {
             try
             {
@@ -91,34 +101,37 @@ namespace GuestHouseMSApi.Controllers
                 return Ok(e);
             }
         }
-        [HttpPost("SaveRoomFeature")]
-        public IActionResult SaveRoomFeature(saveRoomFeature model)
+       
+        // [HttpPost("saveFloorRoomFeature")]
+        // public IActionResult saveFloorRoomFeature(savefloorRoomFeature model)
+        // {
+        //     try
+        //     {
+        //         var response = dapperQuery.SPReturn("dbo.sp_floorRoomFeatureCrud",model,_dbCon);
+
+        //         return Ok(response);
+        //     }
+        //     catch(Exception e)
+        //     {
+        //         return Ok(e);
+        //     }
+        // }
+
+        [HttpPost("saveRoomTypes")]
+        public ActionResult saveRoomTypes(RoomTypesCreation model)
         {
             try
             {
-                var response = dapperQuery.SPReturn("dbo.sp_roomFeatureCrud",model,_dbCon);
-
-                return Ok(response);
+                var row = dapperQuery.SPReturn("sp_roomType",model,_dbCon);
+                return Ok(row);
             }
-            catch(Exception e)
+            catch(Exception e )
             {
                 return Ok(e);
             }
-        }
-        [HttpPost("SaveFloorRoomFeature")]
-        public IActionResult SaveFloorRoomFeature(savefloorRoomFeature model)
-        {
-            try
-            {
-                var response = dapperQuery.SPReturn("dbo.sp_floorRoomFeatureCrud",model,_dbCon);
+        } 
+ 
 
-                return Ok(response);
-            }
-            catch(Exception e)
-            {
-                return Ok(e);
-            }
-        }
         
     }
 }
