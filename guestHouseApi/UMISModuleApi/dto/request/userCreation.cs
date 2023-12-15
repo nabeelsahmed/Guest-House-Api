@@ -8,12 +8,18 @@ namespace UMISModuleApi.dto.request
     public class userCreation
     {
         public int userID { get; set; }
-        public string userFullName { get; set; }
-        public string userEmail { get; set; }
-        public string userMobile { get; set; }
-        public string userPassword { get; set; }
-        public int usermode { get; set; }
-        public string userImageDoc { get; set; }
-        public int isDeleted { get; set; }
+        public string firstName { get; set; }
+        public string lastName { get; set; }
+        public string email { get; set; }
+        public string password { get; set; }
+        public int isPinCode { get; set; }
+        public int pincode { get; set; }
+        public int active { get; set; }
+        public string spType { get; set; }
+        public int branch_id { get; set; }
+        public int roleID { get; set; }
+        public int teacherID { get; set; }
+        public string userType { get; set; }
+        public string userCNIC { get; set; }
     }
 }

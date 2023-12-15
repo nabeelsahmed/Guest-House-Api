@@ -10,7 +10,7 @@ using UMISModuleAPI.Configuration;
 namespace UMISModuleAPI.Controllers
 {
 
-    [ApiController]
+   [ApiController]
     [Route("[controller]")]
     public class ApplicationModuleController : ControllerBase
     {

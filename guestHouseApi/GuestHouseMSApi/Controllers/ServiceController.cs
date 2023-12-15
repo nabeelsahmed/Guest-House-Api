@@ -19,7 +19,7 @@ namespace GuestHouseMSApi.Controllers
             _dbCon = dbCon;
         }
 
-         [HttpPost("saveServices")]
+        [HttpPost("saveServices")]
         public ActionResult saveServices(ServiceCreation model)
         {
             try

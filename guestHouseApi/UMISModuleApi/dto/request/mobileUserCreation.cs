@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace UMISModuleApi.Entities
 {
-    public class MobileUserCreation
+     public class MobileUserCreation
     {
         public int newUserID { get; set; }
         public string firstName { get; set; }

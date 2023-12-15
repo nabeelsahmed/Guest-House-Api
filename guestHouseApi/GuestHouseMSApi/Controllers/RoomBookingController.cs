@@ -85,6 +85,21 @@ namespace GuestHouseMSApi.Controllers
             }
         }
 
+         [HttpGet("getRoomBooking")]
+        public IActionResult getRoomBooking()
+        {
+            try
+            {
+                cmd = "select * from view_roomBooking";    
+                var appMenu = dapperQuery.Qry<RoomBooking>(cmd, _dbCon);
+                return Ok(appMenu);
+            }
+            catch (Exception e)
+            {
+                return Ok(e);
+            }
+        }
+
         [HttpPost("saveRoomBooking")]
         public IActionResult saveRoomBooking(RoomBookingCreation model)
         {

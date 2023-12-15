@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace UMISModuleAPI.Models
 {
-    public class AuthenticateRequest
+     public class AuthenticateRequest
     {
         // [Required]
         // public string email { get; set; }

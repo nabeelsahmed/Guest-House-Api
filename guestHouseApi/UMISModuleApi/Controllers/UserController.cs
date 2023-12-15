@@ -69,20 +69,6 @@ namespace UMISModuleAPI.Controllers
             return Ok(response);
         }
 
-        [HttpPost("verifyPin")]
-        public ActionResult verifyPin(verifyPin model)
-        {
-            try
-            {
-                var row = dapperQuery.SPReturn("sp_verifyPin",model,_dbCon);
-                return Ok(row);
-            }
-            catch(Exception e )
-            {
-                return Ok(e);
-            }
-        } 
-
         [HttpGet("getUserBranches")]
         public IActionResult getUserBranches(int userID)
         {
@@ -199,8 +185,8 @@ namespace UMISModuleAPI.Controllers
         {
             try
             {
-                cmd = "select * from tbl_user";
-                var appMenu = dapperQuery.Qry<userCreation>(cmd, _dbCon);
+                cmd = "SELECT * from view_AllUser";
+                var appMenu = dapperQuery.Qry<userDetail>(cmd, _dbCon);
                 return Ok(appMenu);
             }
             catch(Exception e)
@@ -208,11 +194,6 @@ namespace UMISModuleAPI.Controllers
                 return Ok(e);
             }
         }
-        /// // ///////////////// // ///////////////// // //////////////
-        
-      
-
-        /// // ///////////////// // ///////////////// // //////////////
 
         [HttpPost("createUser")]
         public IActionResult createUser(userCreation model)
