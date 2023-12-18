@@ -5,13 +5,13 @@ using System.Threading.Tasks;
 
 namespace GuestHouseMSApi.Entities
 {
-    public class FloorRoomCreation
+    public class ServiceChargesCreation
     {
-        public int floorRoomID { get; set; }
-        public int floorID { get; set; }
-        public int branch_id { get; set; }
+        public int roomServiceID { get; set; }
+        public int roomBookingID { get; set; }
+        public int serviceID { get; set; }
+        public float serviceQuantity { get; set; }
         public int userID { get; set; }
-        public string json  { get; set; }
         public string spType { get; set; }
     }
 }

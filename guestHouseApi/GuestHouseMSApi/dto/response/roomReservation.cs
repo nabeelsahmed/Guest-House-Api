@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace GuestHouseMSApi.Entities
 {
-    public class RoomBooking
+    public class RoomReservation
     {
         public int partyID { get; set; }
         public int roomBookingID { get; set; }
@@ -18,10 +18,9 @@ namespace GuestHouseMSApi.Entities
         public string checkOut { get; set; }
         public string checkInTime { get; set; }
         public string checkOutTime { get; set; }
-        public string reservationStatus { get; set; }
         public string floorRoomNo { get; set; }
         public string roomtTypeTitle { get; set; }
         public int branch_id { get; set; }
-        public string services { get; set; }
+        public string reservationStatusDate { get; set; }
     }
 }
