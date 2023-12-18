@@ -44,6 +44,24 @@ namespace CMISModuleApi.Controllers
 
         }
 
+        [HttpGet("getBranchCompany")]
+        public IActionResult getBranchCompany(int companyID)
+        {
+            try
+            {
+                cmd = @"select cb.branch_id,cb.company_id,bl.branch_name from tbl_company_branch as cb inner join
+                        tbl_branches_loc as bl on cb.branch_id = bl.branch_id
+                    where cb.isDeleted = 0 and bl.isDeleted = 0 and company_id = "+companyID+"";
+                var appMenu = dapperQuery.Qry<BranchCompany>(cmd, _dbCon);
+                return Ok(appMenu);
+            }
+            catch (Exception e)
+            {
+                return Ok(e);
+            }
+
+        }
+
         [HttpGet("getBranchName")]
         public IActionResult getBranchName( int branch_id)
         {

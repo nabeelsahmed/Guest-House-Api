@@ -50,6 +50,29 @@ namespace GuestHouseMSApi.Controllers
             }
         }
 
+        [HttpGet("getRoomAvailability")]
+        public IActionResult getRoomAvailability(int branchID)
+        {
+            try
+            {
+                if (branchID == 0)
+                {
+                    cmd = "select * from view_roomsAvailability";    
+                }
+                else
+                {
+                    cmd = "select * from view_roomsAvailability where branch_id = " + branchID + "";
+                }
+                var appMenu = dapperQuery.Qry<RoomAvailability>(cmd, _dbCon);
+                return Ok(appMenu);
+            }
+            catch (Exception e)
+            {
+                return Ok(e);
+            }
+        }
+
+
         [HttpGet("getAllFloor")]
         public IActionResult getAllFloor()
         {
@@ -102,21 +125,6 @@ namespace GuestHouseMSApi.Controllers
             }
         }
        
-        // [HttpPost("saveFloorRoomFeature")]
-        // public IActionResult saveFloorRoomFeature(savefloorRoomFeature model)
-        // {
-        //     try
-        //     {
-        //         var response = dapperQuery.SPReturn("dbo.sp_floorRoomFeatureCrud",model,_dbCon);
-
-        //         return Ok(response);
-        //     }
-        //     catch(Exception e)
-        //     {
-        //         return Ok(e);
-        //     }
-        // }
-
         [HttpPost("saveRoomTypes")]
         public ActionResult saveRoomTypes(RoomTypesCreation model)
         {

@@ -49,6 +49,23 @@ namespace GuestHouseMSApi.Controllers
             }
         }
 
+        [HttpGet("getPartyStatus")]
+        public IActionResult getPartyStatus()
+        {
+            try
+            {
+                
+                cmd = "Select * from view_guestStatus";    
+               
+                var appMenu = dapperQuery.Qry<PartyStatus>(cmd, _dbCon);
+                return Ok(appMenu);
+            }
+            catch (Exception e)
+            {
+                return Ok(e);
+            }
+        }
+
         [HttpPost("saveParty")]
         public IActionResult saveParty(PartyCreation model)
         {

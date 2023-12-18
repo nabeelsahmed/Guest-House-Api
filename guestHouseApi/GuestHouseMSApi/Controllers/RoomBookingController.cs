@@ -27,71 +27,86 @@ namespace GuestHouseMSApi.Controllers
             _dbCon = dbCon;
         }
 
-        [HttpGet("getAvailableRooms")]
-        public IActionResult getAvailableRooms(int roomTypeID,int subFeatureID,int roomFeatureID)
-        {
-            try
-            {
-                if (subFeatureID == 0 && roomFeatureID == 0)
-                {
-                    cmd = "Select * from view_availableRooms where roomTypeID = " + roomTypeID + " ";    
-                }
-                else if (subFeatureID == 0)
-                {
-                    cmd = "Select * from view_availableRooms where roomTypeID = " + roomTypeID + " and subFeatureID = " + subFeatureID + "";
-                }
-                else if (roomTypeID != 0 && subFeatureID != 0 && roomFeatureID != 0)
-                {
-                    cmd = "Select * from view_availableRooms where roomTypeID = " + roomTypeID + " and subFeatureID = " + subFeatureID + " and roomFeatureID = " + roomFeatureID + "";
-                }
-                else if (subFeatureID == 0)
-                {
-                    cmd = "Select * from view_availableRooms where roomTypeID = " + roomTypeID + " and roomFeatureID = " + roomFeatureID + "";
-                }
-                else if (subFeatureID != 0 && roomFeatureID == 0 && roomTypeID == 0)
-                {
-                    cmd = "Select * from view_availableRooms Where subFeatureID = " + subFeatureID + "";
-                }
-                else if (subFeatureID != 0 && roomFeatureID != 0 && roomTypeID == 0)
-                {
-                    cmd = "Select * from view_availableRooms Where subFeatureID = " + subFeatureID + " and roomFeatureID = " + roomFeatureID + "";
-                }
-                else if (subFeatureID == 0 && roomFeatureID != 0 && roomTypeID == 0)
-                {
-                    cmd = "Select * from view_availableRooms Where roomFeatureID = " + roomFeatureID + "";
-                }
+        // [HttpGet("getAvailableRooms")]
+        // public IActionResult getAvailableRooms(int roomTypeID,int subFeatureID,int roomFeatureID)
+        // {
+        //     try
+        //     {
+        //         if (subFeatureID == 0 && roomFeatureID == 0)
+        //         {
+        //             cmd = "Select * from view_availableRooms where roomTypeID = " + roomTypeID + " ";    
+        //         }
+        //         else if (subFeatureID == 0)
+        //         {
+        //             cmd = "Select * from view_availableRooms where roomTypeID = " + roomTypeID + " and subFeatureID = " + subFeatureID + "";
+        //         }
+        //         else if (roomTypeID != 0 && subFeatureID != 0 && roomFeatureID != 0)
+        //         {
+        //             cmd = "Select * from view_availableRooms where roomTypeID = " + roomTypeID + " and subFeatureID = " + subFeatureID + " and roomFeatureID = " + roomFeatureID + "";
+        //         }
+        //         else if (subFeatureID == 0)
+        //         {
+        //             cmd = "Select * from view_availableRooms where roomTypeID = " + roomTypeID + " and roomFeatureID = " + roomFeatureID + "";
+        //         }
+        //         else if (subFeatureID != 0 && roomFeatureID == 0 && roomTypeID == 0)
+        //         {
+        //             cmd = "Select * from view_availableRooms Where subFeatureID = " + subFeatureID + "";
+        //         }
+        //         else if (subFeatureID != 0 && roomFeatureID != 0 && roomTypeID == 0)
+        //         {
+        //             cmd = "Select * from view_availableRooms Where subFeatureID = " + subFeatureID + " and roomFeatureID = " + roomFeatureID + "";
+        //         }
+        //         else if (subFeatureID == 0 && roomFeatureID != 0 && roomTypeID == 0)
+        //         {
+        //             cmd = "Select * from view_availableRooms Where roomFeatureID = " + roomFeatureID + "";
+        //         }
                 
-                var appMenu = dapperQuery.Qry<RoomType>(cmd, _dbCon);
-                return Ok(appMenu);
-            }
-            catch (Exception e)
-            {
-                return Ok(e);
-            }
-        }
+        //         var appMenu = dapperQuery.Qry<RoomType>(cmd, _dbCon);
+        //         return Ok(appMenu);
+        //     }
+        //     catch (Exception e)
+        //     {
+        //         return Ok(e);
+        //     }
+        // }
 
-        [HttpGet("getServices")]
-        public IActionResult getServices()
-        {
-            try
-            {
-                cmd = "Select * from tbl_guest_house_service Where isDeleted = 0 and (serviceParentID IS NULL OR serviceParentID = 0)";    
-                var appMenu = dapperQuery.Qry<GuestHouseServices>(cmd, _dbCon);
-                return Ok(appMenu);
-            }
-            catch (Exception e)
-            {
-                return Ok(e);
-            }
-        }
+        // [HttpGet("getServices")]
+        // public IActionResult getServices()
+        // {
+        //     try
+        //     {
+        //         cmd = "Select * from tbl_guest_house_service Where isDeleted = 0 and (serviceParentID IS NULL OR serviceParentID = 0)";    
+        //         var appMenu = dapperQuery.Qry<GuestHouseServices>(cmd, _dbCon);
+        //         return Ok(appMenu);
+        //     }
+        //     catch (Exception e)
+        //     {
+        //         return Ok(e);
+        //     }
+        // }
 
-         [HttpGet("getRoomBooking")]
+        [HttpGet("getRoomBooking")]
         public IActionResult getRoomBooking()
         {
             try
             {
                 cmd = "select * from view_roomBooking";    
                 var appMenu = dapperQuery.Qry<RoomBooking>(cmd, _dbCon);
+                return Ok(appMenu);
+            }
+            catch (Exception e)
+            {
+                return Ok(e);
+            }
+        }
+
+        [HttpGet("getRoomReservation")]
+        public IActionResult getRoomReservation()
+        {
+            try
+            {
+                cmd = "select * from view_roomReservation";    
+                var appMenu = dapperQuery.Qry<RoomReservation>(cmd, _dbCon);
                 return Ok(appMenu);
             }
             catch (Exception e)
