@@ -10,6 +10,8 @@ namespace CMISModuleApi.Entities
         public int branch_id { get; set; }
         public int branch_type_id { get; set; }
         public int countory_id { get; set; }
+        public int company_id { get; set; }
+        public string company_name { get; set; }
         public int city_id { get; set; }
         public string branch_name { get; set; }
         public string contact_info_title { get; set; }
