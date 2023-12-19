@@ -9,5 +9,8 @@ namespace GuestHouseMSApi.Entities
     {
         public int parentServiceID { get; set; }
         public string serviceTitle { get; set; }
+        public string serviceImagePath { get; set; }
+        public string serviceImageExt { get; set; }
+        public float serviceCharges { get; set; }
     }
 }
