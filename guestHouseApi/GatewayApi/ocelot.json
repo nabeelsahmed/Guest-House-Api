@@ -143,7 +143,7 @@
           "Port": "5052"
         }
       ],
-      "UpstreamPathTemplate": "/school-api/{catchAll}",
+      "UpstreamPathTemplate": "/guestms-api/{catchAll}",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "MyOwnKey",
         "AllowedScopes": []
