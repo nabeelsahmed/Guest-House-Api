@@ -82,19 +82,36 @@ namespace GuestHouseMSApi.Controllers
             }
         }
 
+        // [HttpGet("getFloorRooms")]
+        // public IActionResult getFloorRooms(int branchID, int floorID)
+        // {
+        //     try
+        //     {
+        //         if (branchID == 0 && floorID == 0)
+        //         {
+        //             cmd = "select floorRoomID,floorRoomNo from tbl_floor_room where isDeleted = 0";    
+        //         }
+        //         else
+        //         {
+        //             cmd = "select floorRoomID,floorRoomNo from tbl_floor_room where isDeleted = 0 and branch_id = " + branchID + " and floorID = " + floorID + "";
+        //         }
+        //         var appMenu = dapperQuery.Qry<FloorRooms>(cmd, _dbCon);
+        //         return Ok(appMenu);
+        //     }
+        //     catch (Exception e)
+        //     {
+        //         return Ok(e);
+        //     }
+        // }
+
         [HttpGet("getFloorRooms")]
         public IActionResult getFloorRooms(int branchID, int floorID)
         {
             try
             {
-                if (branchID == 0 && floorID == 0)
-                {
-                    cmd = "select floorRoomID,floorRoomNo from tbl_floor_room where isDeleted = 0";    
-                }
-                else
-                {
-                    cmd = "select floorRoomID,floorRoomNo from tbl_floor_room where isDeleted = 0 and branch_id = " + branchID + " and floorID = " + floorID + "";
-                }
+                
+                    cmd = "select * from view_floorRoom where branch_id = " + branchID + " and floorID = " + floorID + "";
+                
                 var appMenu = dapperQuery.Qry<FloorRooms>(cmd, _dbCon);
                 return Ok(appMenu);
             }
