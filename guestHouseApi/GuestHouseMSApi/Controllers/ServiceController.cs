@@ -121,6 +121,23 @@ namespace GuestHouseMSApi.Controllers
             }
         }
 
+        [HttpGet("getRoomServices")]
+        public IActionResult getRoomServices(int roomBookingID)
+        {
+            try
+            {
+                
+                cmd = "Select * from view_roomServices where roomBookingID = "+roomBookingID+"";    
+               
+                var appMenu = dapperQuery.Qry<RoomServices>(cmd, _dbCon);
+                return Ok(appMenu);
+            }
+            catch (Exception e)
+            {
+                return Ok(e);
+            }
+        }
+
         [HttpPost("saveServices")]
         public ActionResult saveServices(ServiceCreation model)
         {
@@ -135,12 +152,12 @@ namespace GuestHouseMSApi.Controllers
             }
         } 
 
-        [HttpPost("saveServiceCharges")]
-        public ActionResult saveServiceChargesDetail(ServiceChargesCreation model)
+        [HttpPost("saveRoomServices")]
+        public ActionResult saveRoomServices(RoomServicesCreation model)
         {
             try
             {
-                var row = dapperQuery.SPReturn("sp_serviceChargesDetail",model,_dbCon);
+                var row = dapperQuery.SPReturn("sp_roomServices",model,_dbCon);
                 return Ok(row);
             }
             catch(Exception e )

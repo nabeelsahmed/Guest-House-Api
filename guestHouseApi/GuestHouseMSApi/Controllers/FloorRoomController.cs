@@ -29,18 +29,12 @@ namespace GuestHouseMSApi.Controllers
 
 
         [HttpGet("getRoomType")]
-        public IActionResult getRoomType(int branchID)
+        public IActionResult getRoomType()
         {
             try
             {
-                if (branchID == 0)
-                {
-                    cmd = "select roomTypeID,roomtTypeTitle as roomTypeTitle from tbl_room_type where isDeleted = 0";    
-                }
-                else
-                {
-                    cmd = "select roomTypeID,roomtTypeTitle as roomTypeTitle from tbl_room_type where isDeleted = 0 and branch_id = " + branchID + "";
-                }
+                cmd = "select roomTypeID,roomtTypeTitle as roomTypeTitle from tbl_room_type where isDeleted = 0";    
+             
                 var appMenu = dapperQuery.Qry<RoomType>(cmd, _dbCon);
                 return Ok(appMenu);
             }
