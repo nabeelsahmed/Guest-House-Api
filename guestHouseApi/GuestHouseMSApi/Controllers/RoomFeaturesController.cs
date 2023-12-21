@@ -32,6 +32,21 @@ namespace GuestHouseMSApi.Controllers
         {
             try
             {
+                cmd = "select * from tbl_room_features";    
+                var appMenu = dapperQuery.Qry<roomFeatures>(cmd, _dbCon);
+                return Ok(appMenu);
+            }
+            catch (Exception e)
+            {
+                return Ok(e);
+            }
+        }
+
+        [HttpGet("getFloorRoomFeatures")]
+        public IActionResult getFloorRoomFeatures()
+        {
+            try
+            {
                 cmd = "select * from view_roomFeatures";    
                 var appMenu = dapperQuery.Qry<roomFeatures>(cmd, _dbCon);
                 return Ok(appMenu);
