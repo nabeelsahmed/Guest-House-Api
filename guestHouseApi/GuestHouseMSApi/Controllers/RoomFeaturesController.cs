@@ -32,8 +32,10 @@ namespace GuestHouseMSApi.Controllers
         {
             try
             {
-                cmd = "select * from tbl_room_features";    
-                var appMenu = dapperQuery.Qry<roomFeatures>(cmd, _dbCon);
+                cmd = @"select roomFeatureID,roomFeatureTitle , roomFeatureParentID,
+                        (select sub_rf.roomFeatureTitle from tbl_room_features as sub_rf where sub_rf.roomFeatureID = rf.roomFeatureParentID) as roomFeatureParentTitle
+                        from tbl_room_features as rf where rf.isDeleted = 0";    
+                var appMenu = dapperQuery.Qry<RoomFeatures>(cmd, _dbCon);
                 return Ok(appMenu);
             }
             catch (Exception e)
@@ -48,7 +50,7 @@ namespace GuestHouseMSApi.Controllers
             try
             {
                 cmd = "select * from tbl_room_features where isDeleted = 0 and roomFeatureParentID is null";    
-                var appMenu = dapperQuery.Qry<roomFeatures>(cmd, _dbCon);
+                var appMenu = dapperQuery.Qry<FloorRoomFeatures>(cmd, _dbCon);
                 return Ok(appMenu);
             }
             catch (Exception e)
@@ -63,7 +65,7 @@ namespace GuestHouseMSApi.Controllers
             try
             {
                 cmd = "select * from view_roomFeatures";    
-                var appMenu = dapperQuery.Qry<roomFeatures>(cmd, _dbCon);
+                var appMenu = dapperQuery.Qry<FloorRoomFeatures>(cmd, _dbCon);
                 return Ok(appMenu);
             }
             catch (Exception e)

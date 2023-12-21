@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace GuestHouseMSApi.Entities
 {
-    public class roomFeatures
+    public class FloorRoomFeatures
     {
         public int roomFeatureID { get; set; }
         public string roomFeatureTitle { get; set; }
