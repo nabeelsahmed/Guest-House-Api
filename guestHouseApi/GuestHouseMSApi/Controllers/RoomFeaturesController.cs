@@ -42,6 +42,21 @@ namespace GuestHouseMSApi.Controllers
             }
         }
 
+        [HttpGet("getParentRoomFeatures")]
+        public IActionResult getParentRoomFeatures()
+        {
+            try
+            {
+                cmd = "select * from tbl_room_features where isDeleted = 0 and roomFeatureParentID is null";    
+                var appMenu = dapperQuery.Qry<roomFeatures>(cmd, _dbCon);
+                return Ok(appMenu);
+            }
+            catch (Exception e)
+            {
+                return Ok(e);
+            }
+        }
+
         [HttpGet("getFloorRoomFeatures")]
         public IActionResult getFloorRoomFeatures()
         {
