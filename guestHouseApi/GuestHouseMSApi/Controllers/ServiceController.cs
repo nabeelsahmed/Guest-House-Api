@@ -64,6 +64,42 @@ namespace GuestHouseMSApi.Controllers
             }
         }
 
+        [HttpGet("getFoodProduct")]
+        public IActionResult getFoodProduct(int branchID)
+        {
+            try
+            {
+                if(branchID ==0)
+                {
+                    cmd = @"select s.serviceID,serviceTypeTitle as serviceTitle,
+	                        (select sub_s.serviceID,sub_s.serviceTypeTitle as serviceTitle,sub_s.serviceImagePath,sub_s.serviceImageExt, sub_sc.serviceCharges, 0 as quantity
+                            from tbl_services as sub_s inner join
+                                tbl_service_charges as sub_sc on sub_s.serviceID =  sub_sc.serviceID
+                            where sub_s.isDeleted = 0 and sub_sc.isDeleted = 0 and sub_s.serviceParentID =s.serviceID for json path) as subServices
+                            from tbl_services as s inner join
+                                tbl_service_charges as sc on s.serviceID =  sc.serviceID
+                            where s.isDeleted = 0 and sc.isDeleted = 0 and serviceTypeID = 1 and serviceParentID is null";    
+                }
+                else
+                {
+                     cmd = @"select s.serviceID,serviceTypeTitle as serviceTitle,
+	                        (select sub_s.serviceID,sub_s.serviceTypeTitle as serviceTitle,sub_s.serviceImagePath,sub_s.serviceImageExt, sub_sc.serviceCharges, 0 as quantity
+                            from tbl_services as sub_s inner join
+                                tbl_service_charges as sub_sc on sub_s.serviceID =  sub_sc.serviceID
+                            where sub_s.isDeleted = 0 and sub_sc.isDeleted = 0 and sub_s.serviceParentID =s.serviceID for json path) as subServices
+                            from tbl_services as s inner join
+                                tbl_service_charges as sc on s.serviceID =  sc.serviceID
+                            where s.isDeleted = 0 and sc.isDeleted = 0 and serviceTypeID = 1 and serviceParentID is null and branch_id = "+branchID+"";  
+                }
+                var appMenu = dapperQuery.Qry<FoodProduct>(cmd, _dbCon);
+                return Ok(appMenu);
+            }
+            catch (Exception e)
+            {
+                return Ok(e);
+            }
+        }
+
 
         [HttpGet("getCatgoryProduct")]
         public IActionResult getCatgoryProduct(int branchID)
