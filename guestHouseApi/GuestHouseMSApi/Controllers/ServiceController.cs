@@ -200,6 +200,20 @@ namespace GuestHouseMSApi.Controllers
             {
                 return Ok(e);
             }
+        }
+
+        [HttpPost("saveFoodRoomServices")]
+        public ActionResult saveFoodRoomServices(FoodRoomServicesCreation model)
+        {
+            try
+            {
+                var row = dapperQuery.SPReturn("sp_roomFoodServices",model,_dbCon);
+                return Ok(row);
+            }
+            catch(Exception e )
+            {
+                return Ok(e);
+            }
         } 
 
     }
