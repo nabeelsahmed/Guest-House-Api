@@ -9,7 +9,6 @@ namespace GuestHouseMSApi.Entities
     {
         public int roomBookingID { get; set; }
         public int partyID { get; set; }
-        public string roomBookingDate { get; set; }
         public string checkIn { get; set; }
         public string checkOut { get; set; }
         public string checkInTime { get; set; }
