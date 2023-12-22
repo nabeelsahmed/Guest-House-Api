@@ -174,6 +174,23 @@ namespace GuestHouseMSApi.Controllers
             }
         }
 
+        [HttpGet("getMeasurementUnit")]
+        public IActionResult getMeasurementUnit()
+        {
+            try
+            {
+                
+                cmd = "Select * from tbl_measurement_unit where isDeleted = 0";    
+               
+                var appMenu = dapperQuery.Qry<MeasurementUnit>(cmd, _dbCon);
+                return Ok(appMenu);
+            }
+            catch (Exception e)
+            {
+                return Ok(e);
+            }
+        }
+
         [HttpPost("saveServices")]
         public ActionResult saveServices(ServiceCreation model)
         {
