@@ -37,11 +37,11 @@ namespace GuestHouseMSApi.Controllers
         }
 
         [HttpGet("getParentService")]
-        public IActionResult getParentService(int branchID)
+        public IActionResult getParentService(int branchID,int serviceTypeID)
         {
             try
             {
-                if(branchID ==0)
+                if(branchID ==0 && serviceTypeID == 0)
                 {
                     cmd = @"select s.serviceID as parentServiceID,serviceTypeTitle as serviceTitle,serviceImagePath,serviceImageExt,sc.serviceCharges 
                             from tbl_services as s inner join
@@ -53,7 +53,7 @@ namespace GuestHouseMSApi.Controllers
                      cmd = @"select s.serviceID as parentServiceID,serviceTypeTitle as serviceTitle,serviceImagePath,serviceImageExt,sc.serviceCharges 
                             from tbl_services as s inner join
                                 tbl_service_charges as sc on s.serviceID =  sc.serviceID
-                            where s.isDeleted = 0 and sc.isDeleted = 0 and branch_id = "+branchID+"";  
+                            where s.isDeleted = 0 and sc.isDeleted = 0 and branch_id = "+branchID+" and serviceTypeID = "+serviceTypeID+"";  
                 }
                 var appMenu = dapperQuery.Qry<ParentService>(cmd, _dbCon);
                 return Ok(appMenu);
@@ -149,6 +149,27 @@ namespace GuestHouseMSApi.Controllers
                             where s.isDeleted = 0 and sc.isDeleted = 0 and serviceParentID = "+serviceID+" and branch_id = "+branchID+"";  
                 }
                 var appMenu = dapperQuery.Qry<ParentService>(cmd, _dbCon);
+                return Ok(appMenu);
+            }
+            catch (Exception e)
+            {
+                return Ok(e);
+            }
+        }
+
+        [HttpGet("getServices")]
+        public IActionResult getServices(int branchID)
+        {
+            try
+            {
+              
+                    cmd = @"select s.serviceTypeID,st.serviceTypeTitle,s.serviceID,s.serviceTypeTitle as serviceTitle,serviceParentID
+                            ,(select serviceTypeTitle as serviceParentTitle from tbl_services where serviceID = s.serviceParentID) as serviceParentTitle
+                            from tbl_service_type as st inner join 
+                                tbl_services as s on st.serviceTypeID = s.serviceTypeID
+                            where st.isDeleted = 0 and s.isDeleted = 0 and branch_id = "+branchID+"";
+
+                var appMenu = dapperQuery.Qry<ServicesDetail>(cmd, _dbCon);
                 return Ok(appMenu);
             }
             catch (Exception e)
