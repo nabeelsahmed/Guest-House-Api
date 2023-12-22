@@ -45,18 +45,32 @@ namespace GuestHouseMSApi.Controllers
         }
 
         [HttpGet("getRoomAvailability")]
-        public IActionResult getRoomAvailability(int branchID)
+        public IActionResult getRoomAvailability(int branchID,int roomTypeID,int roomFeatureID)
         {
+
             try
             {
-                if (branchID == 0)
+                if (branchID != 0 && roomTypeID != 0 && roomFeatureID != 0)
                 {
-                    cmd = "select * from view_roomsAvailability";    
+                    cmd = "Select * from view_roomsAvailability Where branch_id = " + branchID + " and roomTypeID = " + roomTypeID + " and roomFeatureID = " + roomFeatureID + "";  
+                }
+                else if (branchID != 0 && roomTypeID != 0 && roomFeatureID == 0)
+                {
+                    cmd = "Select * from view_roomsAvailability where roomTypeID = " + roomTypeID + " and branch_id = " + branchID + "";
+                }
+                else if (branchID != 0 && roomTypeID == 0 && roomFeatureID == 0)
+                {
+                    cmd = "Select * from view_roomsAvailability where branch_id = " + branchID + "";
+                }
+                else if (branchID != 0 && roomTypeID == 0 && roomFeatureID != 0)
+                {
+                    cmd = "Select * from view_roomsAvailability where roomFeatureID = " + roomFeatureID + " and branch_id = " + branchID + "";
                 }
                 else
                 {
-                    cmd = "select * from view_roomsAvailability where branch_id = " + branchID + "";
+                  cmd = "Select * from view_roomsAvailability";    
                 }
+                
                 var appMenu = dapperQuery.Qry<RoomAvailability>(cmd, _dbCon);
                 return Ok(appMenu);
             }
@@ -64,6 +78,23 @@ namespace GuestHouseMSApi.Controllers
             {
                 return Ok(e);
             }
+            // try
+            // {
+            //     if (branchID == 0)
+            //     {
+            //         cmd = "select * from view_roomsAvailability";    
+            //     }
+            //     else
+            //     {
+            //         cmd = "select * from view_roomsAvailability where branch_id = " + branchID + "";
+            //     }
+            //     var appMenu = dapperQuery.Qry<RoomAvailability>(cmd, _dbCon);
+            //     return Ok(appMenu);
+            // }
+            // catch (Exception e)
+            // {
+            //     return Ok(e);
+            // }
         }
 
 
