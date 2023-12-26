@@ -11,6 +11,7 @@ namespace GuestHouseMSApi.Entities
         public string partyFirstName { get; set; }
         public string partyLastName { get; set; }
         public string partyCNIC { get; set; }
+        public string partyEmail { get; set; }
         public string partyMobile { get; set; }
         public string Status { get; set; }
     }

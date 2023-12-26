@@ -78,23 +78,6 @@ namespace GuestHouseMSApi.Controllers
             {
                 return Ok(e);
             }
-            // try
-            // {
-            //     if (branchID == 0)
-            //     {
-            //         cmd = "select * from view_roomsAvailability";    
-            //     }
-            //     else
-            //     {
-            //         cmd = "select * from view_roomsAvailability where branch_id = " + branchID + "";
-            //     }
-            //     var appMenu = dapperQuery.Qry<RoomAvailability>(cmd, _dbCon);
-            //     return Ok(appMenu);
-            // }
-            // catch (Exception e)
-            // {
-            //     return Ok(e);
-            // }
         }
 
 

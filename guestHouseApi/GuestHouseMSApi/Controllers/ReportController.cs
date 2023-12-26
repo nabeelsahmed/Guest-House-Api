@@ -48,6 +48,26 @@ namespace GuestHouseMSApi.Controllers
                 return Ok(e);
             }
         }
+
+
+        [HttpGet("getGuestBookingRecord")]
+        public IActionResult getGuestBookingRecord(int partyID, string checkIn, string checkOut)
+        {
+            try
+            {
+                
+                cmd = "select * from view_guestBookingRecord where partyID = "+partyID+" and checkIn = '"+checkIn+"' and checkOut = '"+checkOut+"'";   
+                
+                var appMenu = dapperQuery.Qry<GuestBookingRecord>(cmd, _dbCon);
+                return Ok(appMenu);
+            }
+            catch (Exception e)
+            {
+                return Ok(e);
+            }
+        }
+
+        
         
     }
 }
