@@ -70,20 +70,41 @@ namespace GuestHouseMSApi.Controllers
         //     }
         // }
 
-        // [HttpGet("getServices")]
-        // public IActionResult getServices()
-        // {
-        //     try
-        //     {
-        //         cmd = "Select * from tbl_guest_house_service Where isDeleted = 0 and (serviceParentID IS NULL OR serviceParentID = 0)";    
-        //         var appMenu = dapperQuery.Qry<GuestHouseServices>(cmd, _dbCon);
-        //         return Ok(appMenu);
-        //     }
-        //     catch (Exception e)
-        //     {
-        //         return Ok(e);
-        //     }
-        // }
+        [HttpGet("getGuestBookedRecord")]
+        public IActionResult getGuestBookedRecord(int branchID)
+        {
+            try
+            {
+                cmd = @"SELECT distinct p.partyID, p.partyFirstName, p.partyLastName, p.partyCNIC, p.partyMobile, rb.checkIn, rb.checkOut, rb.checkInTime, rb.checkOutTime, rb.reservationStatus, fr.branch_id
+                        FROM   tbl_party AS p INNER JOIN
+                                    tbl_room_booking AS rb ON p.partyID = rb.partyID INNER JOIN
+                                    tbl_floor_room AS fr ON rb.floorRoomID = fr.floorRoomID INNER JOIN
+                                    tbl_room_type AS rt ON fr.roomTypeID = rt.roomTypeID
+                        WHERE p.isDeleted = 0 AND rb.isDeleted = 0 AND fr.isDeleted = 0 and reservationStatus ='booked' and fr.branch_id = "+branchID+"";    
+                var appMenu = dapperQuery.Qry<GuestBookedRecord>(cmd, _dbCon);
+                return Ok(appMenu);
+            }
+            catch (Exception e)
+            {
+                return Ok(e);
+            }
+        }
+
+
+        [HttpGet("getGuestBookedRooms")]
+        public IActionResult getGuestBookedRooms(int partyID,string checkIn,string checkOut,int branchID, int roomTypeID)
+        {
+            try
+            {
+                cmd = @"select * from fun_guestBookedRooms("+partyID+",'"+checkIn+"','"+checkOut+"',"+branchID+", "+roomTypeID+")";    
+                var appMenu = dapperQuery.Qry<GuestBookedRooms>(cmd, _dbCon);
+                return Ok(appMenu);
+            }
+            catch (Exception e)
+            {
+                return Ok(e);
+            }
+        }
 
         [HttpGet("getRoomBooking")]
         public IActionResult getRoomBooking(int branchID)
