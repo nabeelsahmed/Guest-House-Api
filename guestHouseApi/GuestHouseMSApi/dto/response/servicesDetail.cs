@@ -16,5 +16,7 @@ namespace GuestHouseMSApi.Entities
         public float amount { get; set; }
         public int serviceParentID { get; set; }
         public string serviceParentTitle { get; set; }
+          public int measurementUnitID { get; set; }
+        public string measurementUnitTitle { get; set; }
     }
 }

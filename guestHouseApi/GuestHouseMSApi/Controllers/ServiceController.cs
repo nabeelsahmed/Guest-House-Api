@@ -165,9 +165,11 @@ namespace GuestHouseMSApi.Controllers
               
                     cmd = @"select s.serviceTypeID,st.serviceTypeTitle,s.serviceID,s.serviceTypeTitle as serviceTitle,serviceParentID
                     ,(select serviceCharges from tbl_service_charges where isDeleted = 0 and serviceID = s.serviceID) as amount
-                            ,(select serviceTypeTitle as serviceParentTitle from tbl_services where serviceID = s.serviceParentID) as serviceParentTitle
+                            ,(select serviceTypeTitle as serviceParentTitle from tbl_services where serviceID = s.serviceParentID) as serviceParentTitle,mu.measurementUnitID,mu.measurementUnitTitle
                             from tbl_service_type as st inner join 
-                                tbl_services as s on st.serviceTypeID = s.serviceTypeID
+                                tbl_services as s on st.serviceTypeID = s.serviceTypeID inner join
+								tbl_service_charges as sc on s.serviceID = sc.serviceID inner join
+								tbl_measurement_unit as mu on sc.measurementUnitID = mu.measurementUnitID
                             where st.isDeleted = 0 and s.isDeleted = 0 and branch_id = "+branchID+"";
 
                 var appMenu = dapperQuery.Qry<ServicesDetail>(cmd, _dbCon);
