@@ -164,6 +164,7 @@ namespace GuestHouseMSApi.Controllers
             {
               
                     cmd = @"select s.serviceTypeID,st.serviceTypeTitle,s.serviceID,s.serviceTypeTitle as serviceTitle,serviceParentID
+                    ,(select serviceCharges from tbl_service_charges where isDeleted = 0 and serviceID = s.serviceID) as amount
                             ,(select serviceTypeTitle as serviceParentTitle from tbl_services where serviceID = s.serviceParentID) as serviceParentTitle
                             from tbl_service_type as st inner join 
                                 tbl_services as s on st.serviceTypeID = s.serviceTypeID
