@@ -8,7 +8,9 @@ namespace GuestHouseMSApi.Entities
     public class ServicesDetail
     {
         public int serviceTypeID { get; set; }
+        public string serviceDate { get; set; }
         public string serviceTypeTitle { get; set; }
+        public float serviceQuantity { get; set; }
         public int serviceID { get; set; }
         public string serviceTitle { get; set; }
         public float amount { get; set; }
