@@ -158,18 +158,17 @@ namespace GuestHouseMSApi.Controllers
         }
 
         [HttpGet("getServices")]
-        public IActionResult getServices(int roomBookingID)
+        public IActionResult getServices(int branchID)
         {
             try
             {
               
-                    cmd = @"select s.serviceTypeID,rs.serviceDate,st.serviceTypeTitle,rs.serviceQuantity,s.serviceID,s.serviceTypeTitle as serviceTitle,serviceParentID
+                    cmd = @"select s.serviceTypeID,st.serviceTypeTitle,s.serviceID,s.serviceTypeTitle as serviceTitle,serviceParentID
                     ,(select serviceCharges from tbl_service_charges where isDeleted = 0 and serviceID = s.serviceID) as amount
                             ,(select serviceTypeTitle as serviceParentTitle from tbl_services where serviceID = s.serviceParentID) as serviceParentTitle
                             from tbl_service_type as st inner join 
-                                tbl_services as s on st.serviceTypeID = s.serviceTypeID inner join
-								tbl_room_services as rs on s.serviceID = rs.serviceID
-                            where st.isDeleted = 0 and s.isDeleted = 0 and s.serviceTypeID != 1 and rs.roomBookingID = "+roomBookingID+"";
+                                tbl_services as s on st.serviceTypeID = s.serviceTypeID
+                            where st.isDeleted = 0 and s.isDeleted = 0 and branch_id = "+branchID+"";
 
                 var appMenu = dapperQuery.Qry<ServicesDetail>(cmd, _dbCon);
                 return Ok(appMenu);
