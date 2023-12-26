@@ -210,7 +210,7 @@ namespace GuestHouseMSApi.Controllers
             try
             {
                 
-                cmd = "Select * from view_roomServices where roomBookingID = "+roomBookingID+"";    
+                cmd = "Select * from view_roomServices where serviceTypeID !=1 and roomBookingID = "+roomBookingID+"";    
                
                 var appMenu = dapperQuery.Qry<RoomServices>(cmd, _dbCon);
                 return Ok(appMenu);

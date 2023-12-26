@@ -86,11 +86,11 @@ namespace GuestHouseMSApi.Controllers
         // }
 
         [HttpGet("getRoomBooking")]
-        public IActionResult getRoomBooking()
+        public IActionResult getRoomBooking(int branchID)
         {
             try
             {
-                cmd = "select * from view_roomBooking";    
+                cmd = "select * from view_roomBooking where reservationStatus = 'booked' and branch_id = "+branchID+"";    
                 var appMenu = dapperQuery.Qry<RoomBooking>(cmd, _dbCon);
                 return Ok(appMenu);
             }
