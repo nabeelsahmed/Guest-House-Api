@@ -75,7 +75,7 @@ namespace GuestHouseMSApi.Controllers
         {
             try
             {
-                cmd = @"SELECT distinct p.partyID, p.partyFirstName, p.partyLastName, p.partyCNIC, p.partyMobile, rb.checkIn, rb.checkOut, rb.checkInTime, rb.checkOutTime, rb.reservationStatus, fr.branch_id
+                cmd = @"SELECT distinct p.partyID, p.partyFirstName, transactionType,p.partyLastName, p.partyCNIC, p.partyMobile, rb.checkIn, rb.checkOut, rb.checkInTime, rb.checkOutTime, rb.reservationStatus, fr.branch_id
                         FROM   tbl_party AS p INNER JOIN
                                     tbl_room_booking AS rb ON p.partyID = rb.partyID INNER JOIN
                                     tbl_floor_room AS fr ON rb.floorRoomID = fr.floorRoomID INNER JOIN
@@ -96,7 +96,7 @@ namespace GuestHouseMSApi.Controllers
         {
             try
             {
-                cmd = @"select * from fun_guestBookedRooms("+partyID+",'"+checkIn+"','"+checkOut+"',"+branchID+", "+roomTypeID+")";    
+                cmd = @"select * from fun_guestBookedRoom("+partyID+",'"+checkIn+"','"+checkOut+"',"+branchID+", "+roomTypeID+")";    
                 var appMenu = dapperQuery.Qry<GuestBookedRooms>(cmd, _dbCon);
                 return Ok(appMenu);
             }
