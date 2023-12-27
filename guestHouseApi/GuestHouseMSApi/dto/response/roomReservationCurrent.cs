@@ -16,5 +16,6 @@ namespace GuestHouseMSApi.Entities
         public string checkOut { get; set; }
         public string checkInTime { get; set; }
         public string checkOutTime { get; set; }
+        public string branch_id { get; set; }
     }
 }

@@ -137,14 +137,16 @@ namespace GuestHouseMSApi.Controllers
         }
 
         [HttpGet("getRoomReservationCurrent")]
-        public IActionResult getRoomReservationCurrent()
+        public IActionResult getRoomReservationCurrent(int branchID)
         {
             try
             {
-                cmd = @"SELECT distinct p.partyID, p.partyFirstName, p.partyLastName, p.partyCNIC, p.partyMobile, rb.checkIn, rb.checkOut, rb.checkInTime, rb.checkOutTime
+                cmd = @"SELECT distinct p.partyID, p.partyFirstName, p.partyLastName, p.partyCNIC, p.partyMobile, rb.checkIn, rb.checkOut, rb.checkInTime, rb.checkOutTime,branch_id
                         FROM   dbo.tbl_party AS p INNER JOIN
-                                    dbo.tbl_room_booking AS rb ON p.partyID = rb.partyID
-                        WHERE (p.isDeleted = 0) AND (rb.isDeleted = 0) and reservationStatus = 'reserved' and getdate() < checkOut";    
+                                    dbo.tbl_room_booking AS rb ON p.partyID = rb.partyID inner join
+                                    tbl_floor_room as fr on rb.floorRoomID = fr.floorRoomID
+                        WHERE (p.isDeleted = 0) AND (rb.isDeleted = 0) and reservationStatus = 'reserved' and getdate() < checkOut and branch_id = "+branchID+""; 
+                           
                 var appMenu = dapperQuery.Qry<RoomReservationCurrent>(cmd, _dbCon);
                 return Ok(appMenu);
             }
