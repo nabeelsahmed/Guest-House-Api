@@ -92,11 +92,11 @@ namespace GuestHouseMSApi.Controllers
 
 
         [HttpGet("getGuestBookedRooms")]
-        public IActionResult getGuestBookedRooms(int partyID,string checkIn,string checkOut,int branchID, int roomTypeID)
+        public IActionResult getGuestBookedRooms(int partyID,string checkIn,string checkOut,int branchID, int roomTypeID,string reservationStatus)
         {
             try
             {
-                cmd = @"select * from fun_guestBookedRoom("+partyID+",'"+checkIn+"','"+checkOut+"',"+branchID+", "+roomTypeID+")";    
+                cmd = @"select * from fun_guestBookedRoom("+partyID+",'"+checkIn+"','"+checkOut+"',"+branchID+", "+roomTypeID+", '"+reservationStatus+"')";    
                 var appMenu = dapperQuery.Qry<GuestBookedRooms>(cmd, _dbCon);
                 return Ok(appMenu);
             }
@@ -128,6 +128,24 @@ namespace GuestHouseMSApi.Controllers
             {
                 cmd = "select * from view_roomReservation";    
                 var appMenu = dapperQuery.Qry<RoomReservation>(cmd, _dbCon);
+                return Ok(appMenu);
+            }
+            catch (Exception e)
+            {
+                return Ok(e);
+            }
+        }
+
+        [HttpGet("getRoomReservationCurrent")]
+        public IActionResult getRoomReservationCurrent()
+        {
+            try
+            {
+                cmd = @"SELECT distinct p.partyID, p.partyFirstName, p.partyLastName, p.partyCNIC, p.partyMobile, rb.checkIn, rb.checkOut, rb.checkInTime, rb.checkOutTime
+                        FROM   dbo.tbl_party AS p INNER JOIN
+                                    dbo.tbl_room_booking AS rb ON p.partyID = rb.partyID
+                        WHERE (p.isDeleted = 0) AND (rb.isDeleted = 0) and reservationStatus = 'reserved' and getdate() < checkOut";    
+                var appMenu = dapperQuery.Qry<RoomReservationCurrent>(cmd, _dbCon);
                 return Ok(appMenu);
             }
             catch (Exception e)
