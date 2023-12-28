@@ -7,6 +7,7 @@ namespace GuestHouseMSApi.Entities
 {
     public class GuestBookedRecord
     {
+        public int roomBookingID { get; set; }
         public int partyID { get; set; }
         public string partyFirstName { get; set; }
         public string partyLastName { get; set; }

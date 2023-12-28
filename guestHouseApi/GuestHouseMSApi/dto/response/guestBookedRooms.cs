@@ -13,6 +13,7 @@ namespace GuestHouseMSApi.Entities
         public string floorRoomNo { get; set; }
         public int roomTypeID { get; set; }
         public string roomtTypeTitle { get; set; }
+        public string checkIn { get; set; }
         public string checkOut { get; set; }
         public int branch_id { get; set; }
         public int status { get; set; }

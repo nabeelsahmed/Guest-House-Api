@@ -20,6 +20,5 @@ namespace GuestHouseMSApi.Entities
         public string checkOut { get; set; }
         public string rooms { get; set; }
         public string roomServices { get; set; }
-        public int subTotal { get; set; }
     }
 }
