@@ -50,26 +50,7 @@ namespace GuestHouseMSApi.Controllers
 
             try
             {
-                if (branchID != 0 && roomTypeID != 0 && roomFeatureID != 0)
-                {
-                    cmd = "Select * from view_roomsAvailability Where branch_id = " + branchID + " and roomTypeID = " + roomTypeID + " and roomFeatureID = " + roomFeatureID + "";  
-                }
-                else if (branchID != 0 && roomTypeID != 0 && roomFeatureID == 0)
-                {
-                    cmd = "Select * from view_roomsAvailability where roomTypeID = " + roomTypeID + " and branch_id = " + branchID + "";
-                }
-                else if (branchID != 0 && roomTypeID == 0 && roomFeatureID == 0)
-                {
-                    cmd = "Select * from view_roomsAvailability where branch_id = " + branchID + "";
-                }
-                else if (branchID != 0 && roomTypeID == 0 && roomFeatureID != 0)
-                {
-                    cmd = "Select * from view_roomsAvailability where roomFeatureID = " + roomFeatureID + " and branch_id = " + branchID + "";
-                }
-                else
-                {
-                  cmd = "Select * from view_roomsAvailability";    
-                }
+               cmd = @"select * from fun_roomsAvailability("+branchID+","+roomTypeID+","+roomFeatureID+")"; 
                 
                 var appMenu = dapperQuery.Qry<RoomAvailability>(cmd, _dbCon);
                 return Ok(appMenu);
