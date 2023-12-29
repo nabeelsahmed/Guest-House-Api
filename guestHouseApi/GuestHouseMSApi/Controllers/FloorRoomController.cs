@@ -45,7 +45,7 @@ namespace GuestHouseMSApi.Controllers
         }
 
         [HttpGet("getRoomAvailability")]
-        public IActionResult getRoomAvailability(int branchID,int roomTypeID,string @checkIn, string @checkOut,string jsonFeatures)
+        public IActionResult getRoomAvailability(int branchID,int roomTypeID,string checkIn, string checkOut,string jsonFeatures)
         { 
 
             try
