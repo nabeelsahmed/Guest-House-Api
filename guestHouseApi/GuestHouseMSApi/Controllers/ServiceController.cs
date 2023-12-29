@@ -71,8 +71,8 @@ namespace GuestHouseMSApi.Controllers
             {
                 if(branchID ==0)
                 {
-                    cmd = @"select s.serviceID,serviceTypeTitle as serviceTitle,
-	                        (select sub_s.serviceID,sub_s.serviceTypeTitle as serviceTitle,sub_s.serviceImagePath,sub_s.serviceImageExt, cast(sub_sc.serviceCharges as int) as serviceCharges, 0 as quantity
+                    cmd = @"select s.serviceID,serviceTitle,
+	                        (select sub_s.serviceID,sub_s.serviceTitle,sub_s.serviceImagePath,sub_s.serviceImageExt, cast(sub_sc.serviceCharges as int) as serviceCharges, 0 as quantity
                             from tbl_services as sub_s inner join
                                 tbl_service_charges as sub_sc on sub_s.serviceID =  sub_sc.serviceID
                             where sub_s.isDeleted = 0 and sub_sc.isDeleted = 0 and sub_s.serviceParentID =s.serviceID for json path) as subServices
@@ -82,8 +82,8 @@ namespace GuestHouseMSApi.Controllers
                 }
                 else
                 {
-                     cmd = @"select s.serviceID,serviceTypeTitle as serviceTitle,
-	                        (select sub_s.serviceID,sub_s.serviceTypeTitle as serviceTitle,sub_s.serviceImagePath,sub_s.serviceImageExt, cast(sub_sc.serviceCharges as int) as serviceCharges, 0 as quantity
+                     cmd = @"select s.serviceID,serviceTitle,
+	                        (select sub_s.serviceID,sub_s.serviceTitle,sub_s.serviceImagePath,sub_s.serviceImageExt, cast(sub_sc.serviceCharges as int) as serviceCharges, 0 as quantity
                             from tbl_services as sub_s inner join
                                 tbl_service_charges as sub_sc on sub_s.serviceID =  sub_sc.serviceID
                             where sub_s.isDeleted = 0 and sub_sc.isDeleted = 0 and sub_s.serviceParentID =s.serviceID for json path) as subServices
