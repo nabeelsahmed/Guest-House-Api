@@ -208,12 +208,12 @@ namespace GuestHouseMSApi.Controllers
         }
 
         [HttpGet("getRoomServices")]
-        public IActionResult getRoomServices(int roomBookingID)
+        public IActionResult getRoomServices(int roomBookingDetailID)
         {
             try
             {
                 
-                cmd = "Select * from view_roomServices where serviceTypeID !=1 and roomBookingID = "+roomBookingID+"";    
+                cmd = "Select * from view_roomServices where serviceTypeID !=1 and roomBookingDetailID = "+roomBookingDetailID+"";    
                
                 var appMenu = dapperQuery.Qry<RoomServices>(cmd, _dbCon);
                 return Ok(appMenu);
