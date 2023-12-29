@@ -157,10 +157,11 @@ namespace GuestHouseMSApi.Controllers
         {
             try
             {
-                cmd = @"SELECT distinct p.partyID, p.partyFirstName, p.partyLastName, p.partyCNIC, p.partyMobile, rb.checkIn, rb.checkOut, rb.checkInTime, rb.checkOutTime,branch_id
+                cmd = @"SELECT distinct p.partyID, p.partyFirstName, p.partyLastName, p.partyCNIC, p.partyMobile, rbd.checkIn, rbd.checkOut, rbd.checkInTime, rbd.checkOutTime,branch_id
                         FROM   dbo.tbl_party AS p INNER JOIN
                                     dbo.tbl_room_booking AS rb ON p.partyID = rb.partyID inner join
-                                    tbl_floor_room as fr on rb.floorRoomID = fr.floorRoomID
+									tbl_room_bookingDetail as rbd on rb.roomBookingID = rbd.roomBookingID inner join
+                                    tbl_floor_room as fr on rbd.floorRoomID = fr.floorRoomID
                         WHERE (p.isDeleted = 0) AND (rb.isDeleted = 0) and reservationStatus = 'reserved' and getdate() < checkOut and branch_id = "+branchID+""; 
 
                 var appMenu = dapperQuery.Qry<RoomReservationCurrent>(cmd, _dbCon);
