@@ -24,9 +24,22 @@ namespace GuestHouseMSApi.Controllers
         {
             try
             {
-                
-                cmd = "Select * from tbl_service_type";    
-               
+                cmd = "Select * from tbl_service_type where isDeleted = 0";
+                var appMenu = dapperQuery.Qry<ServiceType>(cmd, _dbCon);
+                return Ok(appMenu);
+            }
+            catch (Exception e)
+            {
+                return Ok(e);
+            }
+        }
+
+        [HttpGet("getGuestServiceType")]
+        public IActionResult getGuestServiceType()
+        {
+            try
+            {
+                cmd = "Select * from tbl_service_type where isDeleted = 0 and serviceTypeID != 1";
                 var appMenu = dapperQuery.Qry<ServiceType>(cmd, _dbCon);
                 return Ok(appMenu);
             }
