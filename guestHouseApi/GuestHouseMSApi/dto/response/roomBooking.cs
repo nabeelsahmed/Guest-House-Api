@@ -9,7 +9,7 @@ namespace GuestHouseMSApi.Entities
     {
         public int partyID { get; set; }
         public int roomBookingID { get; set; }
-        public int floorRoomID { get; set; }
+        public int roomBookingDetailID { get; set; }
         public string partyFirstName { get; set; }
         public string partyLastName { get; set; }
         public string partyCNIC { get; set; }
@@ -19,9 +19,13 @@ namespace GuestHouseMSApi.Entities
         public string checkInTime { get; set; }
         public string checkOutTime { get; set; }
         public string reservationStatus { get; set; }
+        public int floorRoomID { get; set; }
         public string floorRoomNo { get; set; }
+        public int floorID { get; set; }
+        public string floorNo { get; set; }
         public string roomtTypeTitle { get; set; }
         public int branch_id { get; set; }
+        public string features { get; set; }
         public string services { get; set; }
     }
 }

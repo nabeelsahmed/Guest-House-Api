@@ -8,7 +8,7 @@ namespace GuestHouseMSApi.Entities
     public class RoomServicesCreation
     {
         public int roomServiceID { get; set; }
-        public int roomBookingID { get; set; }
+        public int roomBookingDetailID { get; set; }
         public int serviceID { get; set; }
         public float serviceQuantity { get; set; }
         public int userID { get; set; }
