@@ -45,12 +45,12 @@ namespace GuestHouseMSApi.Controllers
         }
 
         [HttpGet("getRoomAvailability")]
-        public IActionResult getRoomAvailability(int branchID,int roomTypeID,int roomFeatureID)
-        {
+        public IActionResult getRoomAvailability(int branchID,int roomTypeID,string @checkIn, string @checkOut,string jsonFeatures)
+        { 
 
             try
             {
-               cmd = @"select * from fun_roomsAvailability("+branchID+","+roomTypeID+","+roomFeatureID+")"; 
+               cmd = @"select * from fun_roomsAvailability("+branchID+","+roomTypeID+",'"+checkIn+"','"+checkOut+"','"+jsonFeatures+"')"; 
                 
                 var appMenu = dapperQuery.Qry<RoomAvailability>(cmd, _dbCon);
                 return Ok(appMenu);
