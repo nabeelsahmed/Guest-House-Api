@@ -23,7 +23,9 @@ namespace GuestHouseMSApi.Entities
         public string floorRoomNo { get; set; }
         public int floorID { get; set; }
         public string floorNo { get; set; }
+        public int roomTypeID { get; set; }
         public string roomtTypeTitle { get; set; }
+        public string transactionType { get; set; }
         public int branch_id { get; set; }
         public string features { get; set; }
         public string services { get; set; }
