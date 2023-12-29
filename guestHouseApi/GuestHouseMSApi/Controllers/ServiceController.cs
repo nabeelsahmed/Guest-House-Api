@@ -43,14 +43,14 @@ namespace GuestHouseMSApi.Controllers
             {
                 if(branchID ==0 && serviceTypeID == 0)
                 {
-                    cmd = @"select s.serviceID as parentServiceID,serviceTypeTitle as serviceTitle,serviceImagePath,serviceImageExt,sc.serviceCharges 
+                    cmd = @"select s.serviceID as parentServiceID,serviceTitle,serviceImagePath,serviceImageExt,sc.serviceCharges 
                             from tbl_services as s inner join
                                 tbl_service_charges as sc on s.serviceID =  sc.serviceID
                             where s.isDeleted = 0 and sc.isDeleted = 0";    
                 }
                 else
                 {
-                     cmd = @"select s.serviceID as parentServiceID,serviceTypeTitle as serviceTitle,serviceImagePath,serviceImageExt,sc.serviceCharges 
+                     cmd = @"select s.serviceID as parentServiceID,serviceTitle,serviceImagePath,serviceImageExt,sc.serviceCharges 
                             from tbl_services as s inner join
                                 tbl_service_charges as sc on s.serviceID =  sc.serviceID
                             where s.isDeleted = 0 and sc.isDeleted = 0 and branch_id = "+branchID+" and serviceTypeID = "+serviceTypeID+"";  
@@ -108,14 +108,14 @@ namespace GuestHouseMSApi.Controllers
             {
                 if(branchID ==0)
                 {
-                    cmd = @"select s.serviceID as parentServiceID,serviceTypeTitle as serviceTitle,serviceImagePath,serviceImageExt,sc.serviceCharges 
+                    cmd = @"select s.serviceID as parentServiceID,serviceTitle,serviceImagePath,serviceImageExt,sc.serviceCharges 
                             from tbl_services as s inner join
                                 tbl_service_charges as sc on s.serviceID =  sc.serviceID
                             where s.isDeleted = 0 and sc.isDeleted = 0 and serviceParentID is null";    
                 }
                 else
                 {
-                     cmd = @"select s.serviceID as parentServiceID,serviceTypeTitle as serviceTitle,serviceImagePath,serviceImageExt,sc.serviceCharges 
+                     cmd = @"select s.serviceID as parentServiceID,serviceTitle,serviceImagePath,serviceImageExt,sc.serviceCharges 
                             from tbl_services as s inner join
                                 tbl_service_charges as sc on s.serviceID =  sc.serviceID
                             where s.isDeleted = 0 and sc.isDeleted = 0 and serviceParentID is null and branch_id = "+branchID+"";  
@@ -136,14 +136,14 @@ namespace GuestHouseMSApi.Controllers
             {
                 if(branchID ==0)
                 {
-                    cmd = @"select s.serviceID as parentServiceID,serviceTypeTitle as serviceTitle,serviceImagePath,serviceImageExt,sc.serviceCharges 
+                    cmd = @"select s.serviceID as parentServiceID,serviceTitle,serviceImagePath,serviceImageExt,sc.serviceCharges 
                             from tbl_services as s inner join
                                 tbl_service_charges as sc on s.serviceID =  sc.serviceID
                             where s.isDeleted = 0 and sc.isDeleted = 0 and serviceParentID = "+serviceID+"";    
                 }
                 else
                 {
-                     cmd = @"select s.serviceID as parentServiceID,serviceTypeTitle as serviceTitle,serviceImagePath,serviceImageExt,sc.serviceCharges 
+                     cmd = @"select s.serviceID as parentServiceID,serviceTitle,serviceImagePath,serviceImageExt,sc.serviceCharges 
                             from tbl_services as s inner join
                                 tbl_service_charges as sc on s.serviceID =  sc.serviceID
                             where s.isDeleted = 0 and sc.isDeleted = 0 and serviceParentID = "+serviceID+" and branch_id = "+branchID+"";  
