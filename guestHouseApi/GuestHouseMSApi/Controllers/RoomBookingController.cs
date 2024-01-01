@@ -118,7 +118,7 @@ namespace GuestHouseMSApi.Controllers
                 }
                 else
                 {
-                    cmd = "select * from view_roomBooking where reservationStatus = 'booked' and branch_id = " + branchID + " and partyID = " + partyID + " ";
+                    cmd = "select * from view_guestBookedRooms where branch_id = " + branchID + " and partyID = " + partyID + " ";
                 }                        
                 var appMenu = dapperQuery.Qry<RoomBooking>(cmd, _dbCon);
                 return Ok(appMenu);
