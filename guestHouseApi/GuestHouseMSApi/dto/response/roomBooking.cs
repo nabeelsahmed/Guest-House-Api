@@ -29,5 +29,6 @@ namespace GuestHouseMSApi.Entities
         public int branch_id { get; set; }
         public string features { get; set; }
         public string services { get; set; }
+        public int rentPerNight { get; set; }
     }
 }
