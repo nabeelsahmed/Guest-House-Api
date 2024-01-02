@@ -7,6 +7,7 @@ namespace GuestHouseMSApi.Entities
 {
     public class RoomBookingRecord
     {
+        public int roomBookingDetailID { get; set; }
         public int roomBookingID { get; set; }
         public int company_id { get; set; }
         public string company_name { get; set; }
@@ -20,7 +21,6 @@ namespace GuestHouseMSApi.Entities
         public string partyCNIC { get; set; }
         public string partyMobile { get; set; }
         public string roomServices { get; set; }
-        public int totalAmount { get; set; }
         public string checkIn { get; set; }
         public string checkOut { get; set; }
         public string checkInTime { get; set; }

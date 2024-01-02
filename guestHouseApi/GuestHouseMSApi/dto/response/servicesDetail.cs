@@ -7,7 +7,6 @@ namespace GuestHouseMSApi.Entities
 {
     public class ServicesDetail
     {
-        public int roomBookingDetailID { get; set; }
         public int serviceTypeID { get; set; }
         public string serviceBookingDate { get; set; }
         public string serviceTypeTitle { get; set; }
