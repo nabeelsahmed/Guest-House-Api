@@ -14,7 +14,8 @@ namespace GuestHouseMSApi.Entities
         public string checkInTime { get; set; }
         public string checkOutTime { get; set; }
         public string transactionType { get; set; }
-       public string reservationStatus { get; set; }
+        public string reservationStatus { get; set; }
+        public float discount { get; set; }
         public string roomJson { get; set; }
         public int userID { get; set; }
         public string spType { get; set; }
