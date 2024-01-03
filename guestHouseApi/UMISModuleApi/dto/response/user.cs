@@ -14,6 +14,7 @@ namespace UMISModuleAPI.Entities
         public string isPinCode { get; set; }
         public string pinCode { get; set; }
         public int teacherID { get; set; }
+        public int branch_id { get; set; }
         public string spType { get; set; }
     }
 }
