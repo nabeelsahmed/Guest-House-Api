@@ -17,6 +17,7 @@ namespace UMISModuleApi.dto.response
         public string password { get; set; }
         public string userCNIC { get; set; }
         public int teacherID { get; set; }
+        public int branch_id { get; set; }
         public string userType { get; set; }
     }
 }
