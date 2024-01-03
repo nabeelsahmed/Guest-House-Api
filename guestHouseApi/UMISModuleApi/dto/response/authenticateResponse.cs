@@ -15,6 +15,7 @@ namespace UMISModuleAPI.Models
         public int teacherID { get; set; }
         public string roleTitle { get; set; }
         public string token { get; set; }
+        public int branch_id { get; set; }
 
         public AuthenticateResponse(List<User> user, string userToken)
         {
@@ -26,6 +27,7 @@ namespace UMISModuleAPI.Models
             password = user[0].password;
             isPinCode = user[0].isPinCode;
             teacherID = user[0].teacherID;
+            branch_id = user[0].branch_id;
             token = userToken;
         }
     }
