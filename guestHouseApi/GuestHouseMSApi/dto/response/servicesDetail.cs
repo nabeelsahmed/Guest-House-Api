@@ -22,7 +22,7 @@ namespace GuestHouseMSApi.Entities
         public string branch_name { get; set; }
         public int company_id { get; set; }
         public string company_name { get; set; }
-        public int serviceImagePath { get; set; }
+        public string serviceImagePath { get; set; }
         public string serviceImageExt { get; set; }
     }
 }
