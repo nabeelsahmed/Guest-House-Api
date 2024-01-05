@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using GuestHouseMSApi.Configuration;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
@@ -250,18 +251,47 @@ namespace GuestHouseMSApi.Controllers
         }
 
         [HttpPost("saveServices")]
-        public ActionResult saveServices(ServiceCreation model)
+        public IActionResult saveServices(ServiceCreation model)
         {
             try
             {
-                var row = dapperQuery.SPReturn("sp_services",model,_dbCon);
-                return Ok(row);
+
+                var response = dapperQuery.SPReturn("sp_services", model, _dbCon);
+                var data = response.Select(row => new { res = row.ToString() });
+                bool result = data.First().res.Contains("Success");
+
+                if (result == true && (model.service_picture_path != null && model.service_picture_path != "" && model.service_picture_path != "null"))
+                {
+
+                    var serviceID = data.First().res.Split("|||")[1];
+
+                    dapperQuery.saveImageFile(
+                        model.service_picture_path,
+                        serviceID,
+                        model.service_picture,
+                        model.service_picture_extension);
+                }
+
+                return Ok(response);
             }
-            catch(Exception e )
+            catch (Exception e)
             {
                 return Ok(e);
             }
-        } 
+        }
+
+        // [HttpPost("saveServices")]
+        // public ActionResult saveServices(ServiceCreation model)
+        // {
+        //     try
+        //     {
+        //         var row = dapperQuery.SPReturn("sp_services",model,_dbCon);
+        //         return Ok(row);
+        //     }
+        //     catch(Exception e )
+        //     {
+        //         return Ok(e);
+        //     }
 
         [HttpPost("saveRoomServices")]
         public ActionResult saveRoomServices(RoomServicesCreation model)

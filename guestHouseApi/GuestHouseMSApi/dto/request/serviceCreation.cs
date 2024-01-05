@@ -14,8 +14,9 @@ namespace GuestHouseMSApi.Entities
         public int branch_id { get; set; }
         public float serviceCharges { get; set; }
         public int measurementUnitID { get; set; }
-        public string serviceImagePath { get; set; }
-        public string serviceImageExt { get; set; }
+        public string service_picture_path { get; set; }
+        public string service_picture { get; set; }
+        public string service_picture_extension { get; set; }
         public int userID { get; set; }
         public string spType { get; set; }
     }
