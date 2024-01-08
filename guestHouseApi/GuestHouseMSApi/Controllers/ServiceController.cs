@@ -263,7 +263,7 @@ namespace GuestHouseMSApi.Controllers
                 if (result == true && (model.service_picture_path != null && model.service_picture_path != "" && model.service_picture_path != "null"))
                 {
 
-                    var serviceID = data.First().res.Split("|||")[0];
+                    var serviceID = data.First().res.Split("|||")[1];
 
                     dapperQuery.saveImageFile(
                         model.service_picture_path,
